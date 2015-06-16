@@ -91,7 +91,7 @@ To avoid this you should add a new status to the `phinxlog` table with the curre
     ---------------------------------------------------------
      20141219115236     CURRENT_TIMESTAMP   CURRENT_TIMESTAMP
 
-After doing that you can [check the status of your database](/Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Status_of_your_database), which should tell you that everything is up to date.
+After doing that you can [check the status of your database](./Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Status_of_your_database), which should tell you that everything is up to date.
 
 
 ### More information

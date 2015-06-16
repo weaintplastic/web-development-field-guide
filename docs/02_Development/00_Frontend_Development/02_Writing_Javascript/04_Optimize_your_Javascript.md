@@ -6,4 +6,4 @@
 
 **Compressing** means to optimize your script like joining variable declarations, optimizing if-statements, discard unused variables or joining simple statements using a comma operator.
 
-Luckily we don't have to do this by hand since we are using the power of our [build script](/Development/Frontend_Development/Setting_up_your_project/Setup_Build_System) that use [uglifyJS](http://lisperator.net/uglifyjs/) that is doing a great job on all theses three topics.
+Luckily we don't have to do this by hand since we are using the power of our [build script](./Development/Frontend_Development/Setting_up_your_project/Setup_Build_System) that use [uglifyJS](http://lisperator.net/uglifyjs/) that is doing a great job on all theses three topics.

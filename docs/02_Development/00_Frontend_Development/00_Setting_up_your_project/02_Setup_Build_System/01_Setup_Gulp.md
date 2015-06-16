@@ -9,7 +9,7 @@ This command will install gulp system wide. You should now be able to hit `gulp`
 
 ### Setup Gulp for your project
 
-Gulp is based on Node.js and needs do be added as a Node.js dependency to your project. Therefore use your comand line and navigate to your project root where you should have [Node.js dependency managment setup correctly ](/Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Node_Package_Manager) and execute
+Gulp is based on Node.js and needs do be added as a Node.js dependency to your project. Therefore use your comand line and navigate to your project root where you should have [Node.js dependency managment setup correctly ](./Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Node_Package_Manager) and execute
 
 	npm install gulp --save
 
@@ -31,9 +31,9 @@ To install a plugin you simply intall them using the Node Package Manager. To do
 
 This statement will download the gulp-sass plugin and add a new dependency to your Node.js manifest file `package.json`.
 
-> **Make sure you don't commit and push your dependencies source files to the repository but exclude them using .gitignore when [setting up your collaborative project](/Collaboration/Setup_Collaborative_Projects) **
+> **Make sure you don't commit and push your dependencies source files to the repository but exclude them using .gitignore when [setting up your collaborative project](./Collaboration/Setup_Collaborative_Projects) **
 
-Please have a look at [this simple build script](/Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/A_simple_Gulp_build_script) to understand the basics of how to create tasks with the use of these plugins or go directly to a [more complex example](/Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/A_complex_Gulp_build_script).
+Please have a look at [this simple build script](./Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/A_simple_Gulp_build_script) to understand the basics of how to create tasks with the use of these plugins or go directly to a [more complex example](./Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/A_complex_Gulp_build_script).
 
 
 ### Run gulp

@@ -20,7 +20,7 @@ In previous sections we talked about component based workflows for your CSS and 
 
 Furthermore it is very time consuming for your teammates to maintain or debug your templates. To do so they not just have to setup the whole system on their local machine from scratch and get it running, they also have to initalize the system with the right content to work on a certain component or recreate a situation where others discovered a bug. Doing all this in order to just fix a little to medium CSS or Javascript Bug, sounds like overkill. In that case it would be definitely easier to have templates that just run out of the box without a complicated setup process.
 
-When it comes to testing and specifically to [automated testing](/Testing/Frontend_Testing/Automated_Testing), it makes more sense to perform this task on static files then on everchanging dynamic files.
+When it comes to testing and specifically to [automated testing](./Testing/Frontend_Testing/Automated_Testing), it makes more sense to perform this task on static files then on everchanging dynamic files.
 
 To fix all these problems, you should separate the templates your system is using and the templates you are creating as a static blueprint. This first sounds like double the work, but here's why it's not:
 

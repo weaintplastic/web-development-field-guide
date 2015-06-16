@@ -6,7 +6,7 @@
 > * Your teammates will love you
 
 
-Naming classes is probably the hardest part about writing CSS and is poorly underrated. Choosing a meaningful naming-convention can improve the readability of your code and guarantee easy maintenance and extendability of your work. Even though this topic is deeply connected with the [Writing of Object Oriented CSS](/Development/Frontend_Development/Writing_CSS/Write_Object_Oriented_CSS) it deserves it's own documentation. Using a naming convention makes you automatically think of CSS objects and you are going to modularize your website's components without even noticing it. 
+Naming classes is probably the hardest part about writing CSS and is poorly underrated. Choosing a meaningful naming-convention can improve the readability of your code and guarantee easy maintenance and extendability of your work. Even though this topic is deeply connected with the [Writing of Object Oriented CSS](./Development/Frontend_Development/Writing_CSS/Write_Object_Oriented_CSS) it deserves it's own documentation. Using a naming convention makes you automatically think of CSS objects and you are going to modularize your website's components without even noticing it. 
 
 ### BEM Naming Convention
 

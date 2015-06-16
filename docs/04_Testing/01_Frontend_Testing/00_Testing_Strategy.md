@@ -1,5 +1,5 @@
 ### Know your scope
-When creating a new website, we want our it to run on [certain browsers](/Testing/Cross-Browser_Testing) and [certain devices](/Testing/Cross-Device_Testing). But since projects are different and you'll meet different requirements everytime. So the first thing you have to do, is to define the browsers and devices you want to support.
+When creating a new website, we want our it to run on [certain browsers](./Testing/Cross-Browser_Testing) and [certain devices](./Testing/Cross-Device_Testing). But since projects are different and you'll meet different requirements everytime. So the first thing you have to do, is to define the browsers and devices you want to support.
 
 
 ### Know your limits

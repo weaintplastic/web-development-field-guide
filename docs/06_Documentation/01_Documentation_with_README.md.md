@@ -1,4 +1,4 @@
-Even when the descriptor files of [dependency managers](/Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers) tell us a lot about a project, it's dependencies and techniques that have been used, it is sometimes hard to overview the project and what is going on inside. To simplify the process of getting into a project, you should provide a proper documentation of your project.
+Even when the descriptor files of [dependency managers](./Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers) tell us a lot about a project, it's dependencies and techniques that have been used, it is sometimes hard to overview the project and what is going on inside. To simplify the process of getting into a project, you should provide a proper documentation of your project.
 
 Project Documentations are written in [Markdown](https://help.github.com/articles/markdown-basics/) language and saved as a README.md that is located in the project root of every project. We don't want you to write novels, just provide a rough breakdown of your project.
 

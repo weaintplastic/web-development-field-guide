@@ -22,7 +22,7 @@ rule you should respect in any case:
 
 That means you should never ever work directly on `master` or `develop` except you are doing some hotfixes.
 
-![Git workflow schema](/img/content/collaboration/create-develop-branch.svg "Git workflow schema")
+![Git workflow schema](./img/content/collaboration/create-develop-branch.svg "Git workflow schema")
 
 
 
@@ -30,11 +30,11 @@ That means you should never ever work directly on `master` or `develop` except y
 
 Our example starts with two developers working on separate features. They both need to create separate branches for their respective features. Instead of basing it on `master`, they should both base their feature branches on `develop`:
 
-![Git workflow schema](/img/content/collaboration/create-feature-branch.svg "Git workflow schema")
+![Git workflow schema](./img/content/collaboration/create-feature-branch.svg "Git workflow schema")
 
 During the work on this features both commit their work on their branch and push it to the remote repository. After finishing their work on that feature, the feature branch now needs to be merged back into `develop`.
 
-![Git workflow schema](/img/content/collaboration/merge-feature-branch.svg "Git workflow schema")
+![Git workflow schema](./img/content/collaboration/merge-feature-branch.svg "Git workflow schema")
 
 
 #### Creating a release
@@ -43,13 +43,13 @@ During development you gathered some new features on the `develop` branch and yo
 
 A release will be always branched off of `develop`. Your release branch will have the name `release/v0.1.0` where the version number follows the concept of [Semantic Versioning](http://semver.org/)
 
-![Git workflow schema](/img/content/collaboration/create-release-branch.svg "Git workflow schema")
+![Git workflow schema](./img/content/collaboration/create-release-branch.svg "Git workflow schema")
 
 Sometimes you need to update things during the release cycle like update documentations, version-numbers or cleanup things. This tasks will be performed directly on your created release branch. You are still allowed to commit and push your changes locally an to remote.
 
 Once a release is ready for deployment you merge it back to `master` and `develop`. It’s important to merge back into develop because critical updates may have been added to the release branch and they need to be accessible to new features right ahead.
 
-![Git workflow schema](/img/content/collaboration/merge-release-branch.svg "Git workflow schema")
+![Git workflow schema](./img/content/collaboration/merge-release-branch.svg "Git workflow schema")
 
 Following the concept of [Semantic Versioning](http://semver.org/) you need to apply a new tag to your merge commit and increment the *Major* or *Minor* version number `vmajor.minor.0`.
 
@@ -63,7 +63,7 @@ After the deployment of a new release, you or a user discovers a bug that needs 
 
 To address the bug, you create a maintenance branch off of master, fixes the issue with as many commits as necessary, then merges it directly back into `master` and `develop` and if available into the current `release`.
 
-![Git workflow schema](/img/content/collaboration/create-hotfix-branch.svg "Git workflow schema")
+![Git workflow schema](./img/content/collaboration/create-hotfix-branch.svg "Git workflow schema")
 
 Following the concept of [Semantic Versioning](http://semver.org/)you need to apply a new tag to your merge commit and increment the *Patch* number `v1.4.patch`
 

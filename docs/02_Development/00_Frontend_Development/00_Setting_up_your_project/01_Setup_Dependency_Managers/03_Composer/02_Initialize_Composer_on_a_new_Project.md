@@ -28,4 +28,4 @@ The installed packages are saved in your projects root folder named `composer_ve
 
 
 
-> **Make sure you don't commit and push your dependencies source files to the repository but exclude them using .gitignore when [setting up your collaborative project](/Collaboration/Setup_Collaborative_Projects) **
+> **Make sure you don't commit and push your dependencies source files to the repository but exclude them using .gitignore when [setting up your collaborative project](./Collaboration/Setup_Collaborative_Projects) **

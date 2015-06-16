@@ -9,12 +9,12 @@ There are basically three categories we can assign Javascript code to:
 * **Scripts** All scripts that are related to your websites logic are Javascripts that should fit in here.
 
 ### Outsource 3rd party dependencies
-Including 3rd party code to the core files of your project doesn't just blow up your project repository, it is also hard to get an overview of which files are the ones that belong to the project core, an which ones are coming from others. Since we use [Bower](/Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Bower) for frontend dependency management, we keep 3rd party code outside the actual project scope and inject it using the power of concatenation and our [build script](/Development/Frontend_Development/Setting_up_your_project/Setup_Build_System).
+Including 3rd party code to the core files of your project doesn't just blow up your project repository, it is also hard to get an overview of which files are the ones that belong to the project core, an which ones are coming from others. Since we use [Bower](./Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Bower) for frontend dependency management, we keep 3rd party code outside the actual project scope and inject it using the power of concatenation and our [build script](./Development/Frontend_Development/Setting_up_your_project/Setup_Build_System).
 
 
 ### Use the power of concatenation
 
-Instead of putting everything by yourself in one large javascript file, you should split up Javascript into files and include them automatically using the power of your [build script](/Development/Frontend_Development/Setting_up_your_project/Setup_Build_System).
+Instead of putting everything by yourself in one large javascript file, you should split up Javascript into files and include them automatically using the power of your [build script](./Development/Frontend_Development/Setting_up_your_project/Setup_Build_System).
 
 A include of vendor files in your `vendor.js` could look something like this:
 

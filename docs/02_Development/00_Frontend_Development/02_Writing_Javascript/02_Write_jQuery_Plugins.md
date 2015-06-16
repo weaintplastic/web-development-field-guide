@@ -73,7 +73,7 @@ Shifting the functionality of your teaser to a dedicated jQuery Plugin would loo
     })(jQuery);
 
 
-Our `teaser.js` from the [Object Oriented Javascript Article](/Development/Frontend_Development/Writing_Javascript/Write_Object_Oriented_Javascript) will look like that.
+Our `teaser.js` from the [Object Oriented Javascript Article](./Development/Frontend_Development/Writing_Javascript/Write_Object_Oriented_Javascript) will look like that.
 
     function Teaser() {
         this.initPlugins();

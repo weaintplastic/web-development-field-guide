@@ -16,7 +16,7 @@ When a merge conflict happens the first thing you probably should do is to stay 
 
 Sourcetree will help you to identify conflicted files.
 
-![Conflicted Files](/img/content/collaboration/sourcetree-conflict-01.jpg "Conflicted Files")  
+![Conflicted Files](./img/content/collaboration/sourcetree-conflict-01.jpg "Conflicted Files")  
 
 
 #### Conflict Markup
@@ -37,11 +37,11 @@ The only thing you need to do to get it working correctly is to download and ins
 
 Once a file is marked as conflicted you'll will notice this by the Icon that Sourcetree adds to the file in the list of changed files. To fire up an external merge tool right-click on the conflicted file, goto *Resolve Confilicts* and choose *Launch External Merge Tool*.
 
-![Conflicted Files](/img/content/collaboration/sourcetree-conflict-02.jpg "Conflicted Files")
+![Conflicted Files](./img/content/collaboration/sourcetree-conflict-02.jpg "Conflicted Files")
 
 *P4Merge* will open up the conflicted file in a new window. There you'll see three columns first. The left one reflects the content of your **local** working file, the right column shows content of the **remote** file you've tried to integrate. In the middle you'll find the **common base** of the two conflicted files (left and right).
 
-![Conflicted Files](/img/content/collaboration/sourcetree-conflict-03.jpg "Conflicted Files")
+![Conflicted Files](./img/content/collaboration/sourcetree-conflict-03.jpg "Conflicted Files")
 
 The view underneath the three columns of referenced files will give you the result of the merge. Usually P4Merge tries to merge all three versions – local, remote and base – of your file, but you can decide what should go into the final result and what should be ignored by toggle the Icon-Buttons to the right of the merged lines. The yellow square is the common base, the purple triangle stands for your local version and the green circle reflects the changes that will be included from the remote file. You can click (single toggle) or hold Shift and click (multiple selection) to control which changes make it to the final result. You can do this with every conflict in this file one by another. If you need to do custom changes to the final result feel free to use the editor function of the merged result view and write down your own changes.
 

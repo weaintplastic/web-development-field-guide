@@ -24,7 +24,7 @@ The Git-Flow workflow uses two branches to keep track of the history of your pro
 You'll never work directly on one of these to branches. Your workflow works pretty much around these two branches.
 
 
-![Git workflow schema](/img/content/collaboration/historical-branches.svg "Git workflow schema")
+![Git workflow schema](./img/content/collaboration/historical-branches.svg "Git workflow schema")
 
 
 
@@ -32,7 +32,7 @@ You'll never work directly on one of these to branches. Your workflow works pret
 
 Each new feature is created in its own branch. Instead of branching off of `master`, features are branched of from `develop`. Whenever a feature is complettet, it gets merged back into `develop`. When creating new features you should never work on `master` or `develop` directly
 
-![Git workflow schema](/img/content/collaboration/feature-branches.svg "Git workflow schema")
+![Git workflow schema](./img/content/collaboration/feature-branches.svg "Git workflow schema")
 
 So if you work an a project that already has an existing codebase in `develop` and you start working an a new feature, you have to created a new feature branch and branch of from `develop`. As long as you work on this feature, you'll work against this feature branch. This will allow you to easy switch back to the `develop` branch or stop working on a feature and start a new one without running into conflicts. Each feature should have a descriptive name like `feature/career-api` that help you and other developer to figure out what this feature brach is all about.
 
@@ -48,7 +48,7 @@ Feature branches don't have to be pushed to the remote repository necessarily. A
 
 #### Release branches
 
-![Git workflow schema](/img/content/collaboration/release-branches.svg "Git workflow schema")
+![Git workflow schema](./img/content/collaboration/release-branches.svg "Git workflow schema")
 
 Once your `develop` branch hold enough features ready for a release you create a new release by fork a new release branch off of `develop`. The name of your new release branch follow the rules of [Semantic Versioning](http://semver.org/) (e.g. v0.1.0). When branching for a new release from `develop` you initialize a release cycle, so no new features can be added after this point — only bug fixes, documentation generation, and other release-oriented tasks should go in this branch.
 
@@ -69,7 +69,7 @@ Creating dedicated branches for preparing releases enables on team to polish and
 
 Fixing bugs and quickly patch production releases happens on Maintenace or `hotfix` branches. This is the only branch type that is allowed to directly branch off of `master`. Once a `hotfix` is made, it should be merged back to `master` and `develop` or the current `release` branch instantly. When merging a `hotfix` back to `master` it should be tagged with an updated version number (e.g. v0.1.**1**).
 
-![Git workflow schema](/img/content/collaboration/maintenance-branches.svg "Git workflow schema")
+![Git workflow schema](./img/content/collaboration/maintenance-branches.svg "Git workflow schema")
 
 
 > Hotfix workflow in a glimps

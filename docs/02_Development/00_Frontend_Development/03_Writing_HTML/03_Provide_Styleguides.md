@@ -13,10 +13,10 @@ Every time you are happy with a newly created component, simply add it to your s
 
 On the other hand, styleguide driven development will help you to visually test your components continuously without the need of clicking through every single page of your website.
 
-If you follow the principles of [writing CSS](/Development/Frontend_Development/Writing_CSS/Write_Object_Oriented_CSS) and [Javascript](/Development/Frontend_Development/Writing_Javascript/Write_Object_Oriented_Javascript), setting up a styleguide should be no big deal.
+If you follow the principles of [writing CSS](./Development/Frontend_Development/Writing_CSS/Write_Object_Oriented_CSS) and [Javascript](./Development/Frontend_Development/Writing_Javascript/Write_Object_Oriented_Javascript), setting up a styleguide should be no big deal.
 
 ### A basic example
 
-A basic example of how a styleguide can look like can be found in the [examples section](/examples/04_Styleguide/styleguide.html).
+A basic example of how a styleguide can look like can be found in the [examples section](./examples/04_Styleguide/styleguide.html).
 
 <img src="/docs/img/content/styleguide.png" width="100%" height="auto" />

@@ -2,7 +2,7 @@ Use your Command Line and navigate to the root folder of your project and enter
 
     $ npm init
 
-This command will ask you some questions to generate a `package.json`file in your project route that describes all the dependencies of your project. This file will be updated when adding further dependencies during the development process, for example when you [set up your build system](/Development/Frontend_Development/Setting_up_your_project/Setup_Build_System).
+This command will ask you some questions to generate a `package.json`file in your project route that describes all the dependencies of your project. This file will be updated when adding further dependencies during the development process, for example when you [set up your build system](./Development/Frontend_Development/Setting_up_your_project/Setup_Build_System).
 
     name: (project-name) project-name
     version: (0.0.0) 0.0.1

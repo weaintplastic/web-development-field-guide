@@ -8,7 +8,7 @@ The first thing to do is to download and install SourceTree from their [official
 
 Creating a new local repository form a remote source in Sourchtree you have to clone a project. To do so, click on the `Clone / New` button (top-left corner), select the 'Clone Repository' tab.
 
-![Clone a git repository](/img/collaboration/clone-repo.png "Cloning a git repo")  
+![Clone a git repository](./img/collaboration/clone-repo.png "Cloning a git repo")  
 
 The Form will ask you for a source path (most likely an URL) which points to the remote repository and a destination path where to initialize the repository locally on your machine. Just give it a name and you should be done.
 
@@ -31,7 +31,7 @@ Merging needs to be performed everytime you need to to get updates of another br
 
 To merge one branch into your current branch, just click on `Merge`
 
-![Merging branches](//img/collaboration/merge.png "Merging branches")  
+![Merging branches](.//img/collaboration/merge.png "Merging branches")  
 
 In that dialog you need to choose the commit of a branch you want to merge into the current branch. Usually this causes some changes to your code since it get's updated. Sourcetree automatically commits theses changes, all you have to do is push them to the remote server.
 
@@ -42,7 +42,7 @@ If conflicts happen you need to solve them first before being able to commit and
 
 As mentioned, Sourcetree prefectly integrates Gitflow. To initialize a repository for Gitflow you just need to click on the `Git Flow` button.
 
-![Init Gitflow in SourceTree](//img/collaboration/init-gitflow.png "Init Gitflow in SourceTree")  
+![Init Gitflow in SourceTree](.//img/collaboration/init-gitflow.png "Init Gitflow in SourceTree")  
 
 You should leave the names of the branches as they are and just hit `OK`. Sourcetree will then create an additional `develop` branch off of `master`.
 
@@ -52,7 +52,7 @@ You should leave the names of the branches as they are and just hit `OK`. Source
 To create a new feature click on `Git Flow` and then in `Start New Feature`. You
 should see a dialog like this:  
 
-![New feature](//img/collaboration/new-feature.png "New feature")  
+![New feature](.//img/collaboration/new-feature.png "New feature")  
 
 Add a descriptive name and hit `OK`. Sourcetree automatically creates the feature brachen following the naming convention `feature/feature-name` and you are atomatically switching to that branch.
 
@@ -75,7 +75,7 @@ likely resolve conflicts or commit/discard changes)_**
 
 To create a new release click on `Git Flow` again, and then on the `Start New Release` button. A dialog like this will be opened:  
 
-![New release](//img/collaboration/new-release.png "New release")
+![New release](.//img/collaboration/new-release.png "New release")
 
 By adding a new version nummber for the name of the release following the version name guideliens will create a new release branch and opens a reales cycle. You can now start performing deployment-oriented task like rewriting documentations, cleanup things or increment versioning numbers throughout your code.  
 
@@ -90,7 +90,7 @@ When a bug in production is discovered, you have to create a hot fix for it. By
 now you can probably guess what do to. And yes: Click on `Git Flow` > `Start New Hotfix`,
 and select the name for your hot fix branch:  
 
-![Hotfixes](//img/collaboration/new-hotfix.png "Hotfixes")  
+![Hotfixes](.//img/collaboration/new-hotfix.png "Hotfixes")  
 
 As it should be familiar for you already: Fix the bug, and when it's finished,
 just finish the hot fix but clicking again in `Git Flow` > `Finish Hotfix`. SourceTree
@@ -101,7 +101,7 @@ will (once again!) merge all the branches, delete the hotfix branch, etc.
 
 If you follow all this rules your project should look something like this
 
-![Gitflow overview in SourceTree](//img/collaboration/gitflow-overview.png "Gitflow overview in SourceTree")
+![Gitflow overview in SourceTree](.//img/collaboration/gitflow-overview.png "Gitflow overview in SourceTree")
 
 
 

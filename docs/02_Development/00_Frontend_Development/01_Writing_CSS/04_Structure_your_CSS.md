@@ -5,7 +5,7 @@
 > * Your teammates will love you
 
 
-If you've read the articles about [Writing Object Oriented CSS](/Development/Frontend_Development/Writing_CSS/Write_Object_Oriented_CSS) and the [Usage of naming schemes](/Development/Frontend_Development/Writing_CSS/Follow_a_Naming_Convention), structuring your CSS in a meaningfull way is the last consequence.
+If you've read the articles about [Writing Object Oriented CSS](./Development/Frontend_Development/Writing_CSS/Write_Object_Oriented_CSS) and the [Usage of naming schemes](./Development/Frontend_Development/Writing_CSS/Follow_a_Naming_Convention), structuring your CSS in a meaningfull way is the last consequence.
 
 
 ### Split up your files
@@ -23,7 +23,7 @@ Your styles.scss is your master file which handles all the concatination of your
 
 More about the `@import` functionality could be found in the [Less](http://lesscss.org/features/#import-directives-feature) or [Sass](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#import) documentation.
 
-If you are trying to include third party styles written in CSS, you probably have some hard times to import them with `@import` in SCSS. In order to preserve a clean project structure, we can use `gulp-include` to inject the CSS before compiling the SCSS using our [build script](/Development/Frontend_Development/Setting_up_your_project/Setup_Build_System).
+If you are trying to include third party styles written in CSS, you probably have some hard times to import them with `@import` in SCSS. In order to preserve a clean project structure, we can use `gulp-include` to inject the CSS before compiling the SCSS using our [build script](./Development/Frontend_Development/Setting_up_your_project/Setup_Build_System).
 
 ### Your folder structure
 Following these simple rules your folder structure could look like this:

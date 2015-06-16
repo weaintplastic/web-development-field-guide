@@ -2,7 +2,7 @@ When joining a ongoing project there are some simple steps you need to follow in
 
 ### Install Phinx
 
-Joining a project that was prepared for database versioning, you'll find Phinx as a dependency in the Composer manifest file. Following the process of setting up a project, you'll install Phinx automatically when [installing all Composer dependencies](/Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer/Initialize_Composer_on_an_existing_Project). As a reminder, you have execute the following statement in your project root on your command line:
+Joining a project that was prepared for database versioning, you'll find Phinx as a dependency in the Composer manifest file. Following the process of setting up a project, you'll install Phinx automatically when [installing all Composer dependencies](./Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer/Initialize_Composer_on_an_existing_Project). As a reminder, you have execute the following statement in your project root on your command line:
 
     composer install
 
@@ -60,7 +60,7 @@ Since we want to keep things ordered, first thing you should do is to create a d
         migrations: %%PHINX_CONFIG_DIR%%/db/migrations
 
 Now you should update the `development` environment database credentials in order to start working with the database of your local development environemnt.
-Working with the [Vagrant Box](/Environment/Local_Development_Environment/Vagrant), your configuration might look like this:
+Working with the [Vagrant Box](./Environment/Local_Development_Environment/Vagrant), your configuration might look like this:
 
     development:
         adapter: mysql
@@ -75,5 +75,5 @@ Working with the [Vagrant Box](/Environment/Local_Development_Environment/Vagran
 
 ### Upgrade your database
 
-Depending on how many migrations were written after the last `schema.sql` and `data.sql` dumps were created, you probably need to upgrade your database. In order to get an overview of the current state of your database you should first [check the status](/Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Status_of_your_database) and then perform an [upgrade on your database](/Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Upgrade_your_database).
+Depending on how many migrations were written after the last `schema.sql` and `data.sql` dumps were created, you probably need to upgrade your database. In order to get an overview of the current state of your database you should first [check the status](./Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Status_of_your_database) and then perform an [upgrade on your database](./Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Upgrade_your_database).
 

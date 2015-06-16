@@ -13,7 +13,7 @@ This statement will output somehting similar to the following table:
        down  20141219134850  FeatureSocialFooterMenu
 
 This overview tells me, that my database already migrated changes up until `HotfixLightbox`, and that there are two migrations available to be executed.
-In order to bring you database up to date you should follow the instructions in the chapter on [Upgrade your Database](/Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Upgrade_your_database).
+In order to bring you database up to date you should follow the instructions in the chapter on [Upgrade your Database](./Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Upgrade_your_database).
 
 ### More information
 You'll find detailed information about the status command in the official Phinx documentation: http://docs.phinx.org/en/latest/commands.html#the-status-command
