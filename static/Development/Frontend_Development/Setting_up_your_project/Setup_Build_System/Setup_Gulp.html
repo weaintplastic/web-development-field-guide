@@ -61,7 +61,7 @@
 <p><code>npm install --global gulp</code></p>
 <p>This command will install gulp system wide. You should now be able to hit <code>gulp</code> in your command line.</p>
 <h3>Setup Gulp for your project</h3>
-<p>Gulp is based on Node.js and needs do be added as a Node.js dependency to your project. Therefore use your comand line and navigate to your project root where you should have <a href="./Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Node_Package_Manager">Node.js dependency managment setup correctly </a> and execute</p>
+<p>Gulp is based on Node.js and needs do be added as a Node.js dependency to your project. Therefore use your comand line and navigate to your project root where you should have <a href="/web-development-field-guide/Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Node_Package_Manager">Node.js dependency managment setup correctly </a> and execute</p>
 <pre><code>npm install gulp --save</code></pre>
 <p>When you open up <code>package.json</code> file in your project root you'll notice that <code>gulp</code> was added to your dependencies.</p>
 <h3>Create a gulpfile.js in the root of your project</h3>
@@ -73,9 +73,9 @@ So go to your project root folder and create a file called <code>gulpfile.js</co
 <pre><code>npm install gulp-sass --save</code></pre>
 <p>This statement will download the gulp-sass plugin and add a new dependency to your Node.js manifest file <code>package.json</code>.</p>
 <blockquote>
-<p><strong>Make sure you don't commit and push your dependencies source files to the repository but exclude them using .gitignore when <a href="./Collaboration/Setup_Collaborative_Projects">setting up your collaborative project</a> </strong></p>
+<p><strong>Make sure you don't commit and push your dependencies source files to the repository but exclude them using .gitignore when <a href="/web-development-field-guide/Collaboration/Setup_Collaborative_Projects">setting up your collaborative project</a> </strong></p>
 </blockquote>
-<p>Please have a look at <a href="./Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/A_simple_Gulp_build_script">this simple build script</a> to understand the basics of how to create tasks with the use of these plugins or go directly to a <a href="./Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/A_complex_Gulp_build_script">more complex example</a>.</p>
+<p>Please have a look at <a href="/web-development-field-guide/Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/A_simple_Gulp_build_script">this simple build script</a> to understand the basics of how to create tasks with the use of these plugins or go directly to a <a href="/web-development-field-guide/Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/A_complex_Gulp_build_script">more complex example</a>.</p>
 <h3>Run gulp</h3>
 <p>To run <code>gulp</code> you have to navigate to your project root using your command line and simply enter <code>gulp</code> and exectute it. <code>gulp</code> automatically detects the <code>gulpfile.js</code> in your project root and executes everything that is described there. For now on <code>gulp</code> is running in background until you stop the process using <code>ctrl-c</code> in the command line.
 As long as you didn't have tasks set up in the <code>gulpfile.js</code>, gulp won't do anything. Please note that everytime you make changes to your <code>gulpfile.js</code>you have to stop and run the <code>gulp</code> process again.</p>
