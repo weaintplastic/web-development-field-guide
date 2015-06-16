@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Structure your Javascript</title>
+    <meta name="description" content="" />
+    <meta name="author" content="Roland Lösslein">
+    <link rel="icon" href="../../../templates/weaintplastic/themes/daux-weaintplastic/" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../../../templates/weaintplastic/themes/daux-weaintplastic/css/daux-weaintplastic.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+            <!-- Docs -->
+                <div class="container-fluid fluid-height wrapper">
+            <div class="navbar navbar-fixed-top hidden-print">
+                <div class="container-fluid">
+                    <a class="brand navbar-brand" href="../../../Outline"><span>Web Development Field Guide</span></a>
+                </div>
+            </div>
+            <div class="row columns content">
+                <div class="left-column article-tree col-sm-3 hidden-print">
+                    <!-- For Mobile -->
+                    <div class="responsive-collapse">
+                        <button type="button" class="btn btn-sidebar" id="menu-spinner-button">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="sub-nav-collapse" class="sub-nav-collapse">
+                        <!-- Navigation -->
+                        <ul class="nav nav-list"><li><a href="../../../Outline.html">Outline</a></li><li><a href="#" class="aj-nav folder">Environment</a><ul class="nav nav-list"><li><a href="../../../Environment/Local_Development_Environment/index.html" class="folder">Local Development Environment</a><ul class="nav nav-list"><li><a href="../../../Environment/Local_Development_Environment/Xampp_&_Mamp.html">Xampp & Mamp</a></li><li><a href="../../../Environment/Local_Development_Environment/Vagrant.html">Vagrant</a></li></ul></li><li><a href="../../../Environment/Tools_and_Software.html">Tools and Software</a></li></ul></li><li class="open"><a href="#" class="aj-nav folder">Development</a><ul class="nav nav-list"><li class="open"><a href="../../../Development/Frontend_Development/index.html" class="folder">Frontend Development</a><ul class="nav nav-list"><li><a href="#" class="aj-nav folder">Setting up your project</a><ul class="nav nav-list"><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/The_Project_Ecosystem.html">The Project Ecosystem</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/index.html" class="folder">Setup Dependency Managers</a><ul class="nav nav-list"><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Node_Package_Manager/index.html" class="folder">Node Package Manager</a><ul class="nav nav-list"><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Node_Package_Manager/Install_NPM.html">Install NPM</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Node_Package_Manager/Initialize_NPM_on_a_new_project.html">Initialize NPM on a new project</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Node_Package_Manager/Initialize_NPM_on_an_existing_project.html">Initialize NPM on an existing project</a></li></ul></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Bower/index.html" class="folder">Bower</a><ul class="nav nav-list"><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Bower/Install_Bower.html">Install Bower</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Bower/Initialize_Bower_on_a_new_Project.html">Initialize Bower on a new Project</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Bower/Initialize_Bower_on_an_existing_Project.html">Initialize Bower on an existing Project</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Bower/Add_dependencies_with_Bower.html">Add dependencies with Bower</a></li></ul></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer/index.html" class="folder">Composer</a><ul class="nav nav-list"><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer/Install_Composer.html">Install Composer</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer/Initialize_Composer_on_a_new_Project.html">Initialize Composer on a new Project</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer/Initialize_Composer_on_an_existing_Project.html">Initialize Composer on an existing Project</a></li></ul></li></ul></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/index.html" class="folder">Setup Build System</a><ul class="nav nav-list"><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/Setup_Gulp.html">Setup Gulp</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/A_simple_Gulp_build_script.html">A simple Gulp build script</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/A_complex_Gulp_build_script.html">A complex Gulp build script</a></li></ul></li></ul></li><li><a href="#" class="aj-nav folder">Writing CSS</a><ul class="nav nav-list"><li><a href="../../../Development/Frontend_Development/Writing_CSS/Use_preprocessors.html">Use preprocessors</a></li><li><a href="../../../Development/Frontend_Development/Writing_CSS/Write_Object_Oriented_CSS.html">Write Object Oriented CSS</a></li><li><a href="../../../Development/Frontend_Development/Writing_CSS/Follow_a_Naming_Convention.html">Follow a Naming Convention</a></li><li><a href="../../../Development/Frontend_Development/Writing_CSS/Structure_your_CSS.html">Structure your CSS</a></li><li><a href="../../../Development/Frontend_Development/Writing_CSS/Go_mobile_first.html">Go mobile first</a></li><li><a href="../../../Development/Frontend_Development/Writing_CSS/Use_feature_detection.html">Use feature detection</a></li><li><a href="../../../Development/Frontend_Development/Writing_CSS/Use_3rd_Party_Code_and_Frameworks.html">Use 3rd Party Code and Frameworks</a></li></ul></li><li class="open"><a href="#" class="aj-nav folder">Writing Javascript</a><ul class="nav nav-list"><li><a href="../../../Development/Frontend_Development/Writing_Javascript/Write_Object_Oriented_Javascript.html">Write Object Oriented Javascript</a></li><li><a href="../../../Development/Frontend_Development/Writing_Javascript/Write_jQuery_Plugins.html">Write jQuery Plugins</a></li><li class="active"><a href="../../../Development/Frontend_Development/Writing_Javascript/Structure_your_Javascript.html">Structure your Javascript</a></li><li><a href="../../../Development/Frontend_Development/Writing_Javascript/Optimize_your_Javascript.html">Optimize your Javascript</a></li><li><a href="../../../Development/Frontend_Development/Writing_Javascript/Use_3rd_Party_Code_and_Frameworks.html">Use 3rd Party Code and Frameworks</a></li></ul></li><li><a href="#" class="aj-nav folder">Writing HTML</a><ul class="nav nav-list"><li><a href="../../../Development/Frontend_Development/Writing_HTML/Provide_static_templates.html">Provide static templates</a></li><li><a href="../../../Development/Frontend_Development/Writing_HTML/Structure_your_HTML.html">Structure your HTML</a></li><li><a href="../../../Development/Frontend_Development/Writing_HTML/Provide_Styleguides.html">Provide Styleguides</a></li></ul></li></ul></li></ul></li><li><a href="../../../Collaboration/index.html" class="folder">Collaboration</a><ul class="nav nav-list"><li><a href="#" class="aj-nav folder">Working with Git</a><ul class="nav nav-list"><li><a href="#" class="aj-nav folder">Git Workflow</a><ul class="nav nav-list"><li><a href="../../../Collaboration/Working_with_Git/Git_Workflow/The_Concept_of_Gitflow.html">The Concept of Gitflow</a></li><li><a href="../../../Collaboration/Working_with_Git/Git_Workflow/Working_with_Gitflow.html">Working with Gitflow</a></li><li><a href="../../../Collaboration/Working_with_Git/Git_Workflow/Gitflow_with_Sourctree.html">Gitflow with Sourctree</a></li><li><a href="../../../Collaboration/Working_with_Git/Git_Workflow/FAQ.html">FAQ</a></li></ul></li><li><a href="../../../Collaboration/Working_with_Git/Git_Conflict_Sloving.html">Git Conflict Sloving</a></li></ul></li><li><a href="#" class="aj-nav folder">Database Versioning</a><ul class="nav nav-list"><li><a href="../../../Collaboration/Database_Versioning/The_Concept_of_Database_Versioning.html">The Concept of Database Versioning</a></li><li><a href="../../../Collaboration/Database_Versioning/Working_with_Database_Versioning/index.html" class="folder">Working with Database Versioning</a><ul class="nav nav-list"><li><a href="../../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Initialize_Database_Versioning_on_a_new_project.html">Initialize Database Versioning on a new project</a></li><li><a href="../../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Initialize_Database_Versioning_on_an_existing_project.html">Initialize Database Versioning on an existing project</a></li><li><a href="../../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/index.html" class="folder">Working with migrations</a><ul class="nav nav-list"><li><a href="../../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Create_a_Migration_File.html">Create a Migration File</a></li><li><a href="../../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Status_of_your_database.html">Status of your database</a></li><li><a href="../../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Upgrade_your_database.html">Upgrade your database</a></li><li><a href="../../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Downgrade_your_database.html">Downgrade your database</a></li></ul></li></ul></li></ul></li></ul></li><li><a href="#" class="aj-nav folder">Testing</a><ul class="nav nav-list"><li><a href="#" class="aj-nav folder">Frontend Testing</a><ul class="nav nav-list"><li><a href="../../../Testing/Frontend_Testing/Testing_Strategy.html">Testing Strategy</a></li><li><a href="../../../Testing/Frontend_Testing/Cross-Browser_Testing.html">Cross-Browser Testing</a></li><li><a href="../../../Testing/Frontend_Testing/Cross-Device_Testing.html">Cross-Device Testing</a></li><li><a href="../../../Testing/Frontend_Testing/Styleguide-Driven_Testing.html">Styleguide-Driven Testing</a></li><li><a href="../../../Testing/Frontend_Testing/Automated_Testing.html">Automated Testing</a></li></ul></li></ul></li><li><a href="../../../Deployment.html">Deployment</a></li><li><a href="#" class="aj-nav folder">Documentation</a><ul class="nav nav-list"><li><a href="../../../Documentation/Documentation_with_README.md.html">Documentation with README</a></li><li><a href="../../../Documentation/Documentation_with_Styleguides.html">Documentation with Styleguides</a></li><li><a href="../../../Documentation/Share_Project_Credentials.html">Share Project Credentials</a></li></ul></li><li><a href="../../../Optimization.html">Optimization</a></li></ul>                                                    <div class="well well-sidebar">
+
+                                <!-- Links -->
+                                <a href="https://twitter.com/weaintplastic" target="_blank">Follow @weaintplastic</a><br>                                
+                                <!-- Twitter -->
+                                                            </div>
+                                            </div>
+                </div>
+                <div class="right-column  content-area col-sm-9">
+                    <div class="content-page col-lg-offset-2 col-lg-8">
+                        <article>
+                                                            <div class="page-header sub-header clearfix">
+                                    <h1>Structure your Javascript                                                                            </h1>
+                                    <span style="float: left; font-size: 10px; color: gray;">
+                                        Tuesday, June 16, 2015                                    </span>
+                                    <span style="float: right; font-size: 10px; color: gray;">
+                                        1:59 AM                                    </span>
+                                </div>
+                            
+                            <h3>Split up your files</h3>
+<p>Structuring your Javascript basically means to split up your files and separate your own Javascript from the one that comes from others.</p>
+<p>There are basically three categories we can assign Javascript code to:</p>
+<ul>
+<li><strong>Plugins</strong> As jQuery is one of our most used Javascript Toolset, we are using jQuery plugins very often. Even your own jQuery Plugins fit into this category.</li>
+<li><strong>Vendor</strong> All 3rd party Javascript code like Frameworks and Libraries ( jQuery, BackboneJS, ...) is assigned to this category.</li>
+<li><strong>Scripts</strong> All scripts that are related to your websites logic are Javascripts that should fit in here.</li>
+</ul>
+<h3>Outsource 3rd party dependencies</h3>
+<p>Including 3rd party code to the core files of your project doesn't just blow up your project repository, it is also hard to get an overview of which files are the ones that belong to the project core, an which ones are coming from others. Since we use <a href="/Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Bower">Bower</a> for frontend dependency management, we keep 3rd party code outside the actual project scope and inject it using the power of concatenation and our <a href="/Development/Frontend_Development/Setting_up_your_project/Setup_Build_System">build script</a>.</p>
+<h3>Use the power of concatenation</h3>
+<p>Instead of putting everything by yourself in one large javascript file, you should split up Javascript into files and include them automatically using the power of your <a href="/Development/Frontend_Development/Setting_up_your_project/Setup_Build_System">build script</a>.</p>
+<p>A include of vendor files in your <code>vendor.js</code> could look something like this:</p>
+<pre><code>//= include ../../../../bower_components/jquery/dist/jquery.js</code></pre>
+<p>Following the rules of Object Oriented Javascript makes it easy to decide how to split up your own javascript files: One file per Class (Object). Your project should end up with the most important three javscript files that need to be included in your code: vendor.min.js, plugins.min.js and scripts.min.js.</p>
+<h3>Your folder structure</h3>
+<p>Following these simple rules your source folder structure could look like this:</p>
+<pre><code>js
+|-- plugins
+|   `-- jquery.teaser.js
+|  
+|-- scripts
+|   |-- block--intro.js
+|   |-- block--products.js
+|   |-- teaser.js
+|   `-- main.js
+|  
+|-- plugins.js      // includes jquery.teaser.js and all further jQuery plugins
+|-- scripts.js      // includes block--intro.js, block--prodcuts.js, teaser.js, main.js and all other website scripts
+`-- vendor.js       // includes all 3rd-party Javascript</code></pre>
+<p>In comparison this is how your distribution folder structure will look like.</p>
+<pre><code>js
+|-- plugins.min.js
+|-- scripts.min.js
+|-- vendor.min.js
+`-- modernizr.min.js    // Modernizr need to be included
+                           at the top of your HTML. Therefore
+                           it is excluded form vendor.js</code></pre>
+<p>Sometimes you need scripts to be included at the top of your HTML. To do so, it is no shame to exclude this particular script form concatenation and put it to the distribution folder by hand</p>                                                    </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+
+    <!-- jQuery -->
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined')
+                document.write(unescape("%3Cscript src='../../../js/jquery-1.11.0.min.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+    
+    <!-- hightlight.js -->
+    <script src="../../../js/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <!-- Front end file editor -->
+        <script src="../../../js/custom.js"></script>
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</body>
+</html>
+

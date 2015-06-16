@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Git Conflict Sloving</title>
+    <meta name="description" content="" />
+    <meta name="author" content="Roland Lösslein">
+    <link rel="icon" href="../../templates/weaintplastic/themes/daux-weaintplastic/" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../../templates/weaintplastic/themes/daux-weaintplastic/css/daux-weaintplastic.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+            <!-- Docs -->
+                <div class="container-fluid fluid-height wrapper">
+            <div class="navbar navbar-fixed-top hidden-print">
+                <div class="container-fluid">
+                    <a class="brand navbar-brand" href="../../Outline"><span>Web Development Field Guide</span></a>
+                </div>
+            </div>
+            <div class="row columns content">
+                <div class="left-column article-tree col-sm-3 hidden-print">
+                    <!-- For Mobile -->
+                    <div class="responsive-collapse">
+                        <button type="button" class="btn btn-sidebar" id="menu-spinner-button">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="sub-nav-collapse" class="sub-nav-collapse">
+                        <!-- Navigation -->
+                        <ul class="nav nav-list"><li><a href="../../Outline.html">Outline</a></li><li><a href="#" class="aj-nav folder">Environment</a><ul class="nav nav-list"><li><a href="../../Environment/Local_Development_Environment/index.html" class="folder">Local Development Environment</a><ul class="nav nav-list"><li><a href="../../Environment/Local_Development_Environment/Xampp_&_Mamp.html">Xampp & Mamp</a></li><li><a href="../../Environment/Local_Development_Environment/Vagrant.html">Vagrant</a></li></ul></li><li><a href="../../Environment/Tools_and_Software.html">Tools and Software</a></li></ul></li><li><a href="#" class="aj-nav folder">Development</a><ul class="nav nav-list"><li><a href="../../Development/Frontend_Development/index.html" class="folder">Frontend Development</a><ul class="nav nav-list"><li><a href="#" class="aj-nav folder">Setting up your project</a><ul class="nav nav-list"><li><a href="../../Development/Frontend_Development/Setting_up_your_project/The_Project_Ecosystem.html">The Project Ecosystem</a></li><li><a href="../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/index.html" class="folder">Setup Dependency Managers</a><ul class="nav nav-list"><li><a href="../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Node_Package_Manager/index.html" class="folder">Node Package Manager</a><ul class="nav nav-list"><li><a href="../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Node_Package_Manager/Install_NPM.html">Install NPM</a></li><li><a href="../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Node_Package_Manager/Initialize_NPM_on_a_new_project.html">Initialize NPM on a new project</a></li><li><a href="../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Node_Package_Manager/Initialize_NPM_on_an_existing_project.html">Initialize NPM on an existing project</a></li></ul></li><li><a href="../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Bower/index.html" class="folder">Bower</a><ul class="nav nav-list"><li><a href="../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Bower/Install_Bower.html">Install Bower</a></li><li><a href="../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Bower/Initialize_Bower_on_a_new_Project.html">Initialize Bower on a new Project</a></li><li><a href="../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Bower/Initialize_Bower_on_an_existing_Project.html">Initialize Bower on an existing Project</a></li><li><a href="../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Bower/Add_dependencies_with_Bower.html">Add dependencies with Bower</a></li></ul></li><li><a href="../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer/index.html" class="folder">Composer</a><ul class="nav nav-list"><li><a href="../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer/Install_Composer.html">Install Composer</a></li><li><a href="../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer/Initialize_Composer_on_a_new_Project.html">Initialize Composer on a new Project</a></li><li><a href="../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer/Initialize_Composer_on_an_existing_Project.html">Initialize Composer on an existing Project</a></li></ul></li></ul></li><li><a href="../../Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/index.html" class="folder">Setup Build System</a><ul class="nav nav-list"><li><a href="../../Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/Setup_Gulp.html">Setup Gulp</a></li><li><a href="../../Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/A_simple_Gulp_build_script.html">A simple Gulp build script</a></li><li><a href="../../Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/A_complex_Gulp_build_script.html">A complex Gulp build script</a></li></ul></li></ul></li><li><a href="#" class="aj-nav folder">Writing CSS</a><ul class="nav nav-list"><li><a href="../../Development/Frontend_Development/Writing_CSS/Use_preprocessors.html">Use preprocessors</a></li><li><a href="../../Development/Frontend_Development/Writing_CSS/Write_Object_Oriented_CSS.html">Write Object Oriented CSS</a></li><li><a href="../../Development/Frontend_Development/Writing_CSS/Follow_a_Naming_Convention.html">Follow a Naming Convention</a></li><li><a href="../../Development/Frontend_Development/Writing_CSS/Structure_your_CSS.html">Structure your CSS</a></li><li><a href="../../Development/Frontend_Development/Writing_CSS/Go_mobile_first.html">Go mobile first</a></li><li><a href="../../Development/Frontend_Development/Writing_CSS/Use_feature_detection.html">Use feature detection</a></li><li><a href="../../Development/Frontend_Development/Writing_CSS/Use_3rd_Party_Code_and_Frameworks.html">Use 3rd Party Code and Frameworks</a></li></ul></li><li><a href="#" class="aj-nav folder">Writing Javascript</a><ul class="nav nav-list"><li><a href="../../Development/Frontend_Development/Writing_Javascript/Write_Object_Oriented_Javascript.html">Write Object Oriented Javascript</a></li><li><a href="../../Development/Frontend_Development/Writing_Javascript/Write_jQuery_Plugins.html">Write jQuery Plugins</a></li><li><a href="../../Development/Frontend_Development/Writing_Javascript/Structure_your_Javascript.html">Structure your Javascript</a></li><li><a href="../../Development/Frontend_Development/Writing_Javascript/Optimize_your_Javascript.html">Optimize your Javascript</a></li><li><a href="../../Development/Frontend_Development/Writing_Javascript/Use_3rd_Party_Code_and_Frameworks.html">Use 3rd Party Code and Frameworks</a></li></ul></li><li><a href="#" class="aj-nav folder">Writing HTML</a><ul class="nav nav-list"><li><a href="../../Development/Frontend_Development/Writing_HTML/Provide_static_templates.html">Provide static templates</a></li><li><a href="../../Development/Frontend_Development/Writing_HTML/Structure_your_HTML.html">Structure your HTML</a></li><li><a href="../../Development/Frontend_Development/Writing_HTML/Provide_Styleguides.html">Provide Styleguides</a></li></ul></li></ul></li></ul></li><li class="open"><a href="../../Collaboration/index.html" class="folder">Collaboration</a><ul class="nav nav-list"><li class="open"><a href="#" class="aj-nav folder">Working with Git</a><ul class="nav nav-list"><li><a href="#" class="aj-nav folder">Git Workflow</a><ul class="nav nav-list"><li><a href="../../Collaboration/Working_with_Git/Git_Workflow/The_Concept_of_Gitflow.html">The Concept of Gitflow</a></li><li><a href="../../Collaboration/Working_with_Git/Git_Workflow/Working_with_Gitflow.html">Working with Gitflow</a></li><li><a href="../../Collaboration/Working_with_Git/Git_Workflow/Gitflow_with_Sourctree.html">Gitflow with Sourctree</a></li><li><a href="../../Collaboration/Working_with_Git/Git_Workflow/FAQ.html">FAQ</a></li></ul></li><li class="active"><a href="../../Collaboration/Working_with_Git/Git_Conflict_Sloving.html">Git Conflict Sloving</a></li></ul></li><li><a href="#" class="aj-nav folder">Database Versioning</a><ul class="nav nav-list"><li><a href="../../Collaboration/Database_Versioning/The_Concept_of_Database_Versioning.html">The Concept of Database Versioning</a></li><li><a href="../../Collaboration/Database_Versioning/Working_with_Database_Versioning/index.html" class="folder">Working with Database Versioning</a><ul class="nav nav-list"><li><a href="../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Initialize_Database_Versioning_on_a_new_project.html">Initialize Database Versioning on a new project</a></li><li><a href="../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Initialize_Database_Versioning_on_an_existing_project.html">Initialize Database Versioning on an existing project</a></li><li><a href="../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/index.html" class="folder">Working with migrations</a><ul class="nav nav-list"><li><a href="../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Create_a_Migration_File.html">Create a Migration File</a></li><li><a href="../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Status_of_your_database.html">Status of your database</a></li><li><a href="../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Upgrade_your_database.html">Upgrade your database</a></li><li><a href="../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Downgrade_your_database.html">Downgrade your database</a></li></ul></li></ul></li></ul></li></ul></li><li><a href="#" class="aj-nav folder">Testing</a><ul class="nav nav-list"><li><a href="#" class="aj-nav folder">Frontend Testing</a><ul class="nav nav-list"><li><a href="../../Testing/Frontend_Testing/Testing_Strategy.html">Testing Strategy</a></li><li><a href="../../Testing/Frontend_Testing/Cross-Browser_Testing.html">Cross-Browser Testing</a></li><li><a href="../../Testing/Frontend_Testing/Cross-Device_Testing.html">Cross-Device Testing</a></li><li><a href="../../Testing/Frontend_Testing/Styleguide-Driven_Testing.html">Styleguide-Driven Testing</a></li><li><a href="../../Testing/Frontend_Testing/Automated_Testing.html">Automated Testing</a></li></ul></li></ul></li><li><a href="../../Deployment.html">Deployment</a></li><li><a href="#" class="aj-nav folder">Documentation</a><ul class="nav nav-list"><li><a href="../../Documentation/Documentation_with_README.md.html">Documentation with README</a></li><li><a href="../../Documentation/Documentation_with_Styleguides.html">Documentation with Styleguides</a></li><li><a href="../../Documentation/Share_Project_Credentials.html">Share Project Credentials</a></li></ul></li><li><a href="../../Optimization.html">Optimization</a></li></ul>                                                    <div class="well well-sidebar">
+
+                                <!-- Links -->
+                                <a href="https://twitter.com/weaintplastic" target="_blank">Follow @weaintplastic</a><br>                                
+                                <!-- Twitter -->
+                                                            </div>
+                                            </div>
+                </div>
+                <div class="right-column  content-area col-sm-9">
+                    <div class="content-page col-lg-offset-2 col-lg-8">
+                        <article>
+                                                            <div class="page-header sub-header clearfix">
+                                    <h1>Git Conflict Sloving                                                                            </h1>
+                                    <span style="float: left; font-size: 10px; color: gray;">
+                                        Tuesday, June 16, 2015                                    </span>
+                                    <span style="float: right; font-size: 10px; color: gray;">
+                                        1:59 AM                                    </span>
+                                </div>
+                            
+                            <p>Everybody's greatest fear when working with Git or any other Version Control System is to mess it up. But let me tell you that there is almost no way to mess up a project when you follow the suggested Workflow when starting to collaborate on code. But still, for a lot of developers there  is still one big fear left – <strong>Merge-Conflicts</strong></p>
+<h3>You cannot break things</h3>
+<p>One thing you should always remember is that you cannot break things because of merging. Git enables you to revert merges, undo things and start from scratch.
+Git also takes care of most things during merging and even when it comes to conflicts in worst case you'll just handicap yourself and it won't bring your complete team to halt.</p>
+<h3>When do merge conflicts happen</h3>
+<p>Merging is the process when integrating the codebase of one branch into the one you are curently working with. Doing this you grab the code of another branch an combine it with your current working files.</p>
+<p>The good thing about Git is, that it is pretty smart and figures out how to integrate new changes by itself without your help. But there are some cases where you need to tell Git what to do. These situations will most likely happen when two persons worked on the same file on different branches. Even then Git will be able to figure out how to integrate changes. But if two persons change the same lines in the same file on different branches or if one person decides to deletes parts of a file while the other started making changes on it at the same time Git won't know how to solve this situations alone and therefore it will mark this file as conflicted in order to let you know that it is up to you to solve them.</p>
+<h3>Dealing with Merge Conflicts</h3>
+<p>When a merge conflict happens the first thing you probably should do is to stay cool an figure out what just happend and why. Did a merge conflict happen because of a deleted or modified file or did you both add a file with the same name?</p>
+<p>Sourcetree will help you to identify conflicted files.</p>
+<p><img alt="Conflicted Files" src="/img/content/collaboration/sourcetree-conflict-01.jpg" title="Conflicted Files" />  </p>
+<h4>Conflict Markup</h4>
+<p>Let's take a closer look on how a conflict will reflect in markup of your file. Git will wrap conflicted areas with a <strong><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code></strong> marker in the beginning and a <strong><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; [other/branch/name]</code></strong> marker at the end.</p>
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+font-family: sans-serif;</h1>
+<p>position: relative;</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>develop</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>Text after the first marker shows content of your current working file. Lines after the <strong><code>=======</code></strong> are the changes coming from the other branch. So <strong><code>=======</code></strong> separates the changes that will cause the conflict.</p>
+<h4>Resolve Conflicts</h4>
+<p>When a conflict happens, your job is to clean it up. The example above is pretty simple and you might be able to solve the conflict using a text editor. But sometimes there are pretty complex conflicts happening to a file and the conflict markup becomes pretty messy. There are plenty of tools out there, that will help you resolve these conflicts visually and that will work well together with Sourcetree. One tool that will help you to resolve conflicts is <a href="http://www.perforce.com/product/components/perforce-visual-merge-and-diff-tools">P4Merge</a>.
+The only thing you need to do to get it working correctly is to download and install <a href="http://www.perforce.com/product/components/perforce-visual-merge-and-diff-tools">P4Merge</a> and add it as the preferred external Diff and Merge Tool in the preferences of Sourcetree. Therefore navigate to <strong>Diff</strong> in Sourcetree's preferences and select <em>P4Merge</em> in the dropdown.</p>
+<p>Once a file is marked as conflicted you'll will notice this by the Icon that Sourcetree adds to the file in the list of changed files. To fire up an external merge tool right-click on the conflicted file, goto <em>Resolve Confilicts</em> and choose <em>Launch External Merge Tool</em>.</p>
+<p><img alt="Conflicted Files" src="/img/content/collaboration/sourcetree-conflict-02.jpg" title="Conflicted Files" /></p>
+<p><em>P4Merge</em> will open up the conflicted file in a new window. There you'll see three columns first. The left one reflects the content of your <strong>local</strong> working file, the right column shows content of the <strong>remote</strong> file you've tried to integrate. In the middle you'll find the <strong>common base</strong> of the two conflicted files (left and right).</p>
+<p><img alt="Conflicted Files" src="/img/content/collaboration/sourcetree-conflict-03.jpg" title="Conflicted Files" /></p>
+<p>The view underneath the three columns of referenced files will give you the result of the merge. Usually P4Merge tries to merge all three versions – local, remote and base – of your file, but you can decide what should go into the final result and what should be ignored by toggle the Icon-Buttons to the right of the merged lines. The yellow square is the common base, the purple triangle stands for your local version and the green circle reflects the changes that will be included from the remote file. You can click (single toggle) or hold Shift and click (multiple selection) to control which changes make it to the final result. You can do this with every conflict in this file one by another. If you need to do custom changes to the final result feel free to use the editor function of the merged result view and write down your own changes.</p>
+<p>After you've finished resolving the conflicted file make sure to save and quit the merge tool. Only then Sourcetree is able to recognize that a conflict was resolved an therefore changes the state of the file from conflicted to staged.</p>
+<p>If your merge was successful and everything is okay, you can delete this file.</p>
+<h4>Undo a Merge</h4>
+<p>If you've resolved the conflict of a file and <strong>didn't commit yet</strong> but want to start the resolving process all over, you should first lookout for a <em>.orig</em> file with the same basename as the conflicted one. This is a backup that was created. Copy the content of the <em>.orig</em> file to your previously conflicted file and right click it in Sourcetree, move to <em>Resolve Conflicts</em> and click on <em>Mark Unresolved</em>. From there you can start the process from scratch.</p>
+<p>It happens that you realize that your merge was wrong <strong>after you've already committed</strong> the merged file. That's nothing to be worried about. You can easily roll back to the point before you've merged by reseting to the commit before you've started to integrate the other branch. In Sourcetree try to find the last commit of your current branch in the branch history before merging, right click on that commit and choose <em>reset </em>your_branch<em> to this commit</em>. Choose <em>Hard</em> in the next dialog as the reset mode and click <em>OK</em>.</p>                                                    </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+
+    <!-- jQuery -->
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined')
+                document.write(unescape("%3Cscript src='../../js/jquery-1.11.0.min.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+    
+    <!-- hightlight.js -->
+    <script src="../../js/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <!-- Front end file editor -->
+        <script src="../../js/custom.js"></script>
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</body>
+</html>
+

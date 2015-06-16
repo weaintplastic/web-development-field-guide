@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Write Object Oriented CSS</title>
+    <meta name="description" content="" />
+    <meta name="author" content="Roland Lösslein">
+    <link rel="icon" href="../../../templates/weaintplastic/themes/daux-weaintplastic/" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../../../templates/weaintplastic/themes/daux-weaintplastic/css/daux-weaintplastic.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+            <!-- Docs -->
+                <div class="container-fluid fluid-height wrapper">
+            <div class="navbar navbar-fixed-top hidden-print">
+                <div class="container-fluid">
+                    <a class="brand navbar-brand" href="../../../Outline"><span>Web Development Field Guide</span></a>
+                </div>
+            </div>
+            <div class="row columns content">
+                <div class="left-column article-tree col-sm-3 hidden-print">
+                    <!-- For Mobile -->
+                    <div class="responsive-collapse">
+                        <button type="button" class="btn btn-sidebar" id="menu-spinner-button">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="sub-nav-collapse" class="sub-nav-collapse">
+                        <!-- Navigation -->
+                        <ul class="nav nav-list"><li><a href="../../../Outline.html">Outline</a></li><li><a href="#" class="aj-nav folder">Environment</a><ul class="nav nav-list"><li><a href="../../../Environment/Local_Development_Environment/index.html" class="folder">Local Development Environment</a><ul class="nav nav-list"><li><a href="../../../Environment/Local_Development_Environment/Xampp_&_Mamp.html">Xampp & Mamp</a></li><li><a href="../../../Environment/Local_Development_Environment/Vagrant.html">Vagrant</a></li></ul></li><li><a href="../../../Environment/Tools_and_Software.html">Tools and Software</a></li></ul></li><li class="open"><a href="#" class="aj-nav folder">Development</a><ul class="nav nav-list"><li class="open"><a href="../../../Development/Frontend_Development/index.html" class="folder">Frontend Development</a><ul class="nav nav-list"><li><a href="#" class="aj-nav folder">Setting up your project</a><ul class="nav nav-list"><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/The_Project_Ecosystem.html">The Project Ecosystem</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/index.html" class="folder">Setup Dependency Managers</a><ul class="nav nav-list"><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Node_Package_Manager/index.html" class="folder">Node Package Manager</a><ul class="nav nav-list"><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Node_Package_Manager/Install_NPM.html">Install NPM</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Node_Package_Manager/Initialize_NPM_on_a_new_project.html">Initialize NPM on a new project</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Node_Package_Manager/Initialize_NPM_on_an_existing_project.html">Initialize NPM on an existing project</a></li></ul></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Bower/index.html" class="folder">Bower</a><ul class="nav nav-list"><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Bower/Install_Bower.html">Install Bower</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Bower/Initialize_Bower_on_a_new_Project.html">Initialize Bower on a new Project</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Bower/Initialize_Bower_on_an_existing_Project.html">Initialize Bower on an existing Project</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Bower/Add_dependencies_with_Bower.html">Add dependencies with Bower</a></li></ul></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer/index.html" class="folder">Composer</a><ul class="nav nav-list"><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer/Install_Composer.html">Install Composer</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer/Initialize_Composer_on_a_new_Project.html">Initialize Composer on a new Project</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer/Initialize_Composer_on_an_existing_Project.html">Initialize Composer on an existing Project</a></li></ul></li></ul></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/index.html" class="folder">Setup Build System</a><ul class="nav nav-list"><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/Setup_Gulp.html">Setup Gulp</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/A_simple_Gulp_build_script.html">A simple Gulp build script</a></li><li><a href="../../../Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/A_complex_Gulp_build_script.html">A complex Gulp build script</a></li></ul></li></ul></li><li class="open"><a href="#" class="aj-nav folder">Writing CSS</a><ul class="nav nav-list"><li><a href="../../../Development/Frontend_Development/Writing_CSS/Use_preprocessors.html">Use preprocessors</a></li><li class="active"><a href="../../../Development/Frontend_Development/Writing_CSS/Write_Object_Oriented_CSS.html">Write Object Oriented CSS</a></li><li><a href="../../../Development/Frontend_Development/Writing_CSS/Follow_a_Naming_Convention.html">Follow a Naming Convention</a></li><li><a href="../../../Development/Frontend_Development/Writing_CSS/Structure_your_CSS.html">Structure your CSS</a></li><li><a href="../../../Development/Frontend_Development/Writing_CSS/Go_mobile_first.html">Go mobile first</a></li><li><a href="../../../Development/Frontend_Development/Writing_CSS/Use_feature_detection.html">Use feature detection</a></li><li><a href="../../../Development/Frontend_Development/Writing_CSS/Use_3rd_Party_Code_and_Frameworks.html">Use 3rd Party Code and Frameworks</a></li></ul></li><li><a href="#" class="aj-nav folder">Writing Javascript</a><ul class="nav nav-list"><li><a href="../../../Development/Frontend_Development/Writing_Javascript/Write_Object_Oriented_Javascript.html">Write Object Oriented Javascript</a></li><li><a href="../../../Development/Frontend_Development/Writing_Javascript/Write_jQuery_Plugins.html">Write jQuery Plugins</a></li><li><a href="../../../Development/Frontend_Development/Writing_Javascript/Structure_your_Javascript.html">Structure your Javascript</a></li><li><a href="../../../Development/Frontend_Development/Writing_Javascript/Optimize_your_Javascript.html">Optimize your Javascript</a></li><li><a href="../../../Development/Frontend_Development/Writing_Javascript/Use_3rd_Party_Code_and_Frameworks.html">Use 3rd Party Code and Frameworks</a></li></ul></li><li><a href="#" class="aj-nav folder">Writing HTML</a><ul class="nav nav-list"><li><a href="../../../Development/Frontend_Development/Writing_HTML/Provide_static_templates.html">Provide static templates</a></li><li><a href="../../../Development/Frontend_Development/Writing_HTML/Structure_your_HTML.html">Structure your HTML</a></li><li><a href="../../../Development/Frontend_Development/Writing_HTML/Provide_Styleguides.html">Provide Styleguides</a></li></ul></li></ul></li></ul></li><li><a href="../../../Collaboration/index.html" class="folder">Collaboration</a><ul class="nav nav-list"><li><a href="#" class="aj-nav folder">Working with Git</a><ul class="nav nav-list"><li><a href="#" class="aj-nav folder">Git Workflow</a><ul class="nav nav-list"><li><a href="../../../Collaboration/Working_with_Git/Git_Workflow/The_Concept_of_Gitflow.html">The Concept of Gitflow</a></li><li><a href="../../../Collaboration/Working_with_Git/Git_Workflow/Working_with_Gitflow.html">Working with Gitflow</a></li><li><a href="../../../Collaboration/Working_with_Git/Git_Workflow/Gitflow_with_Sourctree.html">Gitflow with Sourctree</a></li><li><a href="../../../Collaboration/Working_with_Git/Git_Workflow/FAQ.html">FAQ</a></li></ul></li><li><a href="../../../Collaboration/Working_with_Git/Git_Conflict_Sloving.html">Git Conflict Sloving</a></li></ul></li><li><a href="#" class="aj-nav folder">Database Versioning</a><ul class="nav nav-list"><li><a href="../../../Collaboration/Database_Versioning/The_Concept_of_Database_Versioning.html">The Concept of Database Versioning</a></li><li><a href="../../../Collaboration/Database_Versioning/Working_with_Database_Versioning/index.html" class="folder">Working with Database Versioning</a><ul class="nav nav-list"><li><a href="../../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Initialize_Database_Versioning_on_a_new_project.html">Initialize Database Versioning on a new project</a></li><li><a href="../../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Initialize_Database_Versioning_on_an_existing_project.html">Initialize Database Versioning on an existing project</a></li><li><a href="../../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/index.html" class="folder">Working with migrations</a><ul class="nav nav-list"><li><a href="../../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Create_a_Migration_File.html">Create a Migration File</a></li><li><a href="../../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Status_of_your_database.html">Status of your database</a></li><li><a href="../../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Upgrade_your_database.html">Upgrade your database</a></li><li><a href="../../../Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Downgrade_your_database.html">Downgrade your database</a></li></ul></li></ul></li></ul></li></ul></li><li><a href="#" class="aj-nav folder">Testing</a><ul class="nav nav-list"><li><a href="#" class="aj-nav folder">Frontend Testing</a><ul class="nav nav-list"><li><a href="../../../Testing/Frontend_Testing/Testing_Strategy.html">Testing Strategy</a></li><li><a href="../../../Testing/Frontend_Testing/Cross-Browser_Testing.html">Cross-Browser Testing</a></li><li><a href="../../../Testing/Frontend_Testing/Cross-Device_Testing.html">Cross-Device Testing</a></li><li><a href="../../../Testing/Frontend_Testing/Styleguide-Driven_Testing.html">Styleguide-Driven Testing</a></li><li><a href="../../../Testing/Frontend_Testing/Automated_Testing.html">Automated Testing</a></li></ul></li></ul></li><li><a href="../../../Deployment.html">Deployment</a></li><li><a href="#" class="aj-nav folder">Documentation</a><ul class="nav nav-list"><li><a href="../../../Documentation/Documentation_with_README.md.html">Documentation with README</a></li><li><a href="../../../Documentation/Documentation_with_Styleguides.html">Documentation with Styleguides</a></li><li><a href="../../../Documentation/Share_Project_Credentials.html">Share Project Credentials</a></li></ul></li><li><a href="../../../Optimization.html">Optimization</a></li></ul>                                                    <div class="well well-sidebar">
+
+                                <!-- Links -->
+                                <a href="https://twitter.com/weaintplastic" target="_blank">Follow @weaintplastic</a><br>                                
+                                <!-- Twitter -->
+                                                            </div>
+                                            </div>
+                </div>
+                <div class="right-column  content-area col-sm-9">
+                    <div class="content-page col-lg-offset-2 col-lg-8">
+                        <article>
+                                                            <div class="page-header sub-header clearfix">
+                                    <h1>Write Object Oriented CSS                                                                            </h1>
+                                    <span style="float: left; font-size: 10px; color: gray;">
+                                        Tuesday, June 16, 2015                                    </span>
+                                    <span style="float: right; font-size: 10px; color: gray;">
+                                        3:43 AM                                    </span>
+                                </div>
+                            
+                            <blockquote>
+<h4>Good reasons why you should follow the principles of OOCSS</h4>
+<ul>
+<li>Lighter websites since there is less CSS code needed to describe your website's styling</li>
+<li>Faster websites since CSS parsing is much easier due to the simplification of your styles</li>
+<li>Code is easy to be maintained since changes have to be made in just one location instead of hundreds</li>
+<li>Your teammates will love you</li>
+</ul>
+</blockquote>
+<p>Did you ever had the feeling that your CSS became messed up, super complicated and way to complex when working on a website? Or have you ever been super frustrated when working on the CSS of somebody else and didn't know about existing styles and how to reuse them proberly without redundancy? Then object oriented CSS is the answer to these problems. It’s an approach for writing CSS that’s fast, maintainable, and standards-based. It adds much needed predictability to CSS so that even beginners can participate in writing beautiful websites.</p>
+<h3>What is a CSS object (a basic example)</h3>
+<p>Basically, a CSS object is a repeating visual pattern, that can be abstracted into an independent snippet of HTML, CSS, and possibly JavaScript. That object can then be reused throughout a site. To show you exactly what this means, it is worth to take a look at the two main principles of OOCSS:</p>
+<h4>1. Separate structure and skin</h4>
+<p>This means to define repeating visual features (like background and border styles) as separate “skins” that you can mix-and-match with your various objects to achieve a large amount of visual variety without much code. Imagine we have a header and a footer on our websites, both with their own styles but some shared properties like the background color.</p>
+<pre><code>.header{
+    background:     white;
+    border-bottom:     1px solid red;
+    height:         20px;
+}
+
+.footer{
+    background:     white;
+    height:         40px;
+    position:         absolute;
+    left:             0;
+    top:             0;
+}</code></pre>
+<p>So the first principle of OOCSS advices us to separate potential commonly shared properties (skin) from the structure (element styles). The HTML and CSS following the first principle of OOCSS will look like this:</p>
+<pre><code>.header{
+    border-bottom:     1px solid red;
+    height:         20px;
+}
+
+.footer{
+    height:         40px;
+    position:         absolute;
+    left:             0;
+    top:             0;
+}
+
+.background-white{
+    background:     white;
+}
+
+&lt;header class="header background-white"&gt;&lt;/header&gt;
+&lt;footer class="footer background-white"&gt;&lt;/footer&gt;</code></pre>
+<h4>2. Separate container and content</h4>
+<p>Essentially, this means "rarely use location-dependent styles". An object should look the same no matter where you put it. So instead of styling a specific <code>&lt;h2&gt;</code> with <code>.myObject h2 {...}</code>, create and apply a class that describes the <code>&lt;h2&gt;</code>, like <code>&lt;h2 class="category"&gt;</code>.</p>
+<p>This gives you the assurance that:</p>
+<ol>
+<li>all unclassed <code>&lt;h2&gt;</code>s will look the same</li>
+<li>all elements with the category class (called a mixin) will look the same;</li>
+<li>you won’t need to create an override style for the case when you actually do want .myObject h2 to look like the normal <code>&lt;h2&gt;</code></li>
+</ol>                                                    </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+
+    <!-- jQuery -->
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined')
+                document.write(unescape("%3Cscript src='../../../js/jquery-1.11.0.min.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+    
+    <!-- hightlight.js -->
+    <script src="../../../js/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <!-- Front end file editor -->
+        <script src="../../../js/custom.js"></script>
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</body>
+</html>
+
