@@ -1,0 +1,1 @@
+Node's Package Manger is called NPM (Node Package Manager) and is used to manage the package dependencies of [Node.js](http://nodejs.org/). In my workflow the [project build system](/Development/Frontend_Development/Setting_up_your_project/Setup_Build_System) is based on Node.js and its dependencies are managed using NPM.

@@ -1,0 +1,30 @@
+// Responsive Breakpoints
+$breakpoint-s: 					480;
+$breakpoint-m: 					768;
+$breakpoint-l: 					992;
+$breakpoint-xl:					1200;
+$breakpoint-xxl:				1400;
+
+$breakpoint-xs-min: 	0;
+$breakpoint-xs-max: 	($breakpoint-s - 1);
+$breakpoint-s-min: 		$breakpoint-s;
+$breakpoint-s-max: 		($breakpoint-m - 1);
+$breakpoint-m-min: 		$breakpoint-m;
+$breakpoint-m-max: 		($breakpoint-l - 1);
+$breakpoint-l-min: 		$breakpoint-l;
+$breakpoint-l-max: 		($breakpoint-xl - 1);
+$breakpoint-xl-min: 	$breakpoint-xl;
+$breakpoint-xl-max: 	($breakpoint-xxl - 1);
+$breakpoint-xxl-min: 	$breakpoint-xxl;
+
+
+// Grid
+$gutter-width: 			20;
+
+// Colors
+
+$color-grey-50: 		#eeeeee;
+$color-grey-30: 		#dddddd;
+$color-white: 			#ffffff;
+$color-black: 			#000000;
+

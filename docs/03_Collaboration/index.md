@@ -1,0 +1,5 @@
+Collaborating on projects is a huge challenge in a team. Everybody has it's preferences on how they work, in which order they do stuff and how to communicate with others. To streamline this and lower the challenge a little bit, we have to commit to some rules and tools.
+
+Some tools and a proper workflow can help to work together without loosing your individual way to work. I chose to work with Git as the tool for source code management and version control. Instead of just stick to some git basics I started to follow the Git-Flow workflow. In order to understand the follow chapters you should at least have an understanding for the [Basics of Git](http://www.git-tower.com/learn/ebook/command-line/basics/basic-workflow#start) and a fundamental knowledge of how [Git Branching](http://www.git-tower.com/learn/ebook/command-line/branching-merging/branching-can-change-your-life#start) works.
+
+A way to start learning Git is of course the [official Git documentation](http://git-scm.com/doc), but a more visual and low-level entrance to this topic is the amazing documentation of [Tower and their courses on how to work with git](http://www.git-tower.com/learn/).

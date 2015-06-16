@@ -1,0 +1,28 @@
+@media (min-width: $breakpoint-xs-min + px) {
+	.column{
+		float: left;
+	}
+
+	.column--3{
+		width: 100%;
+	}
+}
+
+@media (min-width: $breakpoint-s-min + px) {
+	.column--3{
+		width: 50%;
+	}
+}
+
+@media (min-width: $breakpoint-m-min + px) {
+	.column--3{
+		width: 33.333%;
+	}
+}
+
+@media (min-width: $breakpoint-l-min + px) {
+}
+
+@media (min-width: $breakpoint-xl-min + px) {
+
+}

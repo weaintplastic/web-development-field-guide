@@ -1,0 +1,3 @@
+Database Versioning can be pretty complex process. You have to keep an eye on available migrations that you probably need to execute in order to make the current codebase work correctly plus you are responsible for providing the right patch files to your coworkers to execute.
+
+To make life simple, we are working with a tool called Phinx. [Phinx](https://phinx.org/) is a migration manager written in PHP which provides you a command line interface in order to execute migration patches or perform rollbacks. It also tracks the state of your database and knows which migrations are available and which have already been executed. Therefore Phinx is creating its own table in your projects database to log the performed migrations.

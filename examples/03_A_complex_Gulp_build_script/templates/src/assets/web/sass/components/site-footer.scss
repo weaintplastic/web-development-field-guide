@@ -1,0 +1,27 @@
+@media (min-width: $breakpoint-xs-min + px) {
+	.site-footer{
+		background: 	$color-white;
+		padding: 		10px;
+		position: 		absolute;
+		bottom: 		0;
+		left: 			0;
+		right: 			0;
+		border-top: 	1px solid $color-grey-30;
+	}
+}
+
+@media (min-width: $breakpoint-s-min + px) {
+
+}
+
+@media (min-width: $breakpoint-m-min + px) {
+	
+}
+
+@media (min-width: $breakpoint-l-min + px) {
+
+}
+
+@media (min-width: $breakpoint-xl-min + px) {
+
+}

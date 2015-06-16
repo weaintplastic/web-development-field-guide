@@ -1,0 +1,13 @@
+{
+    "name": "rolandloesslein/05_database_versioning",
+    "description": "An example setup for database versioning",
+    "authors": [
+        {
+            "name": "Roland Loesslein",
+            "email": "r.loesslein@agentur-loop.com"
+        }
+    ],
+    "require": {
+        "robmorgan/phinx": "0.4.*"
+    }
+}
