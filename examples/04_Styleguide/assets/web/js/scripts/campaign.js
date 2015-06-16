@@ -1,1 +1,0 @@
-var Campaign=function(){var n=function(){};return{init:n}}();$(Campaign.init);

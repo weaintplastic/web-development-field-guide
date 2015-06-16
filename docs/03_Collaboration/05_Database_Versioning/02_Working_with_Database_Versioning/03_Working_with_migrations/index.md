@@ -1,1 +1,0 @@
-Once you've set up your project correctly for versioning your database, or joined a project that uses the power of database versioning, you are able to create, execute and rollback migrations on your own.

@@ -1,1 +1,0 @@
-Composer is a dependency manager for PHP. Some of my projects are based on PHP and even my templates are tend to be delivered as static files, sometimes I need the help of third party libraries to connect to APIs and such.

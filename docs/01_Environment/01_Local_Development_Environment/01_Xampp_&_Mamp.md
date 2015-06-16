@@ -1,4 +1,0 @@
-Xampp or Mamp are sandboxed LAMP (Linux-Apache-MySQL-PHP) server environments ready for you to use on your local machine. Usually no configuration is needed and after intalling the environment you can start coding right ahead.
-For more details on how to install and use these environments please visit the [Xampp](https://www.apachefriends.org/de/index.html) or [Mamp](http://www.mamp.info/de/) website.
-
-If you don't get too serious with server-side development and configuration, then Xampp or Mamp are a good choice. But if development is your everyday job and you need to test on different server setups and need full control on installed packages and extensions, you'd probably go with a [Vagrant based environment](/Environment/Local_Development_Environment/Vagrant) for any serious development tasks.

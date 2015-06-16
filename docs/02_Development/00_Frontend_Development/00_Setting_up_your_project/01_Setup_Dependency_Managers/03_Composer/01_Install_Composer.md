@@ -1,1 +1,0 @@
-In order to use Composer, you first need to install it on your system. Please follow the instructions on https://getcomposer.org
