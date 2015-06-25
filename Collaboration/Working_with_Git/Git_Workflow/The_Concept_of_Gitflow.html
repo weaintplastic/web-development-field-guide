@@ -51,9 +51,9 @@
                                                             <div class="page-header sub-header clearfix">
                                     <h1>The Concept of Gitflow                                                                            </h1>
                                     <span style="float: left; font-size: 10px; color: gray;">
-                                        Tuesday, June 16, 2015                                    </span>
+                                        Thursday, June 25, 2015                                    </span>
                                     <span style="float: right; font-size: 10px; color: gray;">
-                                        7:11 AM                                    </span>
+                                        3:56 AM                                    </span>
                                 </div>
                             
                             <p>Having a collaborative environment is not only about being able to share and
@@ -74,10 +74,10 @@ repository. There are 4 types of branches in GitFlow:</p>
 <h3>Historical branches</h3>
 <p>The Git-Flow workflow uses two branches to keep track of the history of your project. While the <code>master</code> branch holds the official release history, the <code>develop</code> branch servers as the branch for integrating features. Usually all commits in the <code>master</code> branch are are taged with a proper version number. I suggest to follow the rules of <a href="http://semver.org/">Semantic Versioning</a>.</p>
 <p>You'll never work directly on one of these to branches. Your workflow works pretty much around these two branches.</p>
-<p><img alt="Git workflow schema" src="./img/content/collaboration/historical-branches.svg" title="Git workflow schema" /></p>
+<p><img alt="Git workflow schema" src="/web-development-field-guide/img/content/collaboration/historical-branches.svg" title="Git workflow schema" /></p>
 <h4>Feature branches</h4>
 <p>Each new feature is created in its own branch. Instead of branching off of <code>master</code>, features are branched of from <code>develop</code>. Whenever a feature is complettet, it gets merged back into <code>develop</code>. When creating new features you should never work on <code>master</code> or <code>develop</code> directly</p>
-<p><img alt="Git workflow schema" src="./img/content/collaboration/feature-branches.svg" title="Git workflow schema" /></p>
+<p><img alt="Git workflow schema" src="/web-development-field-guide/img/content/collaboration/feature-branches.svg" title="Git workflow schema" /></p>
 <p>So if you work an a project that already has an existing codebase in <code>develop</code> and you start working an a new feature, you have to created a new feature branch and branch of from <code>develop</code>. As long as you work on this feature, you'll work against this feature branch. This will allow you to easy switch back to the <code>develop</code> branch or stop working on a feature and start a new one without running into conflicts. Each feature should have a descriptive name like <code>feature/career-api</code> that help you and other developer to figure out what this feature brach is all about.</p>
 <p>Feature branches don't have to be pushed to the remote repository necessarily. After finishing the development of a feature, it need's to be merged back to <code>develop</code>. For a cleaner repository you should delete the feature branch afterwards locally as well as in the remote repository.</p>
 <blockquote>
@@ -90,7 +90,7 @@ repository. There are 4 types of branches in GitFlow:</p>
 </ol>
 </blockquote>
 <h4>Release branches</h4>
-<p><img alt="Git workflow schema" src="./img/content/collaboration/release-branches.svg" title="Git workflow schema" /></p>
+<p><img alt="Git workflow schema" src="/web-development-field-guide/img/content/collaboration/release-branches.svg" title="Git workflow schema" /></p>
 <p>Once your <code>develop</code> branch hold enough features ready for a release you create a new release by fork a new release branch off of <code>develop</code>. The name of your new release branch follow the rules of <a href="http://semver.org/">Semantic Versioning</a> (e.g. v0.1.0). When branching for a new release from <code>develop</code> you initialize a release cycle, so no new features can be added after this point — only bug fixes, documentation generation, and other release-oriented tasks should go in this branch.</p>
 <p>Once it's ready to ship, the release gets merged into <code>master</code> and tagged with a version number. In addition, it should be merged back into <code>develop</code>, which may has progressed with new features since the release was initiated.</p>
 <p>Creating dedicated branches for preparing releases enables on team to polish and prepare a release while the other team is continuing working on new features. It is also nice to see release tasks like "this week we're shipping version 4.0.0" reflected in the repository</p>
@@ -106,7 +106,7 @@ repository. There are 4 types of branches in GitFlow:</p>
 </blockquote>
 <h4>Maintenance branches</h4>
 <p>Fixing bugs and quickly patch production releases happens on Maintenace or <code>hotfix</code> branches. This is the only branch type that is allowed to directly branch off of <code>master</code>. Once a <code>hotfix</code> is made, it should be merged back to <code>master</code> and <code>develop</code> or the current <code>release</code> branch instantly. When merging a <code>hotfix</code> back to <code>master</code> it should be tagged with an updated version number (e.g. v0.1.<strong>1</strong>).</p>
-<p><img alt="Git workflow schema" src="./img/content/collaboration/maintenance-branches.svg" title="Git workflow schema" /></p>
+<p><img alt="Git workflow schema" src="/web-development-field-guide/img/content/collaboration/maintenance-branches.svg" title="Git workflow schema" /></p>
 <blockquote>
 <p>Hotfix workflow in a glimps</p>
 <ol>

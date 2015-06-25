@@ -51,9 +51,9 @@
                                                             <div class="page-header sub-header clearfix">
                                     <h1>Working with Gitflow                                                                            </h1>
                                     <span style="float: left; font-size: 10px; color: gray;">
-                                        Tuesday, June 16, 2015                                    </span>
+                                        Thursday, June 25, 2015                                    </span>
                                     <span style="float: right; font-size: 10px; color: gray;">
-                                        7:11 AM                                    </span>
+                                        3:56 AM                                    </span>
                                 </div>
                             
                             <p>The concept of Gitflow might sound a little bit complex first, but as soon as you are working with it, you will totally understand the logic behind it and since it is very straight forward and intuitive, you shouldn't have bigger problems working with it.</p>
@@ -74,25 +74,25 @@ rule you should respect in any case:</p>
 <p><strong>A developer is not allowed to work directly against any historical branch.</strong></p>
 </blockquote>
 <p>That means you should never ever work directly on <code>master</code> or <code>develop</code> except you are doing some hotfixes.</p>
-<p><img alt="Git workflow schema" src="./img/content/collaboration/create-develop-branch.svg" title="Git workflow schema" /></p>
+<p><img alt="Git workflow schema" src="/web-development-field-guide/img/content/collaboration/create-develop-branch.svg" title="Git workflow schema" /></p>
 <h4>Create features</h4>
 <p>Our example starts with two developers working on separate features. They both need to create separate branches for their respective features. Instead of basing it on <code>master</code>, they should both base their feature branches on <code>develop</code>:</p>
-<p><img alt="Git workflow schema" src="./img/content/collaboration/create-feature-branch.svg" title="Git workflow schema" /></p>
+<p><img alt="Git workflow schema" src="/web-development-field-guide/img/content/collaboration/create-feature-branch.svg" title="Git workflow schema" /></p>
 <p>During the work on this features both commit their work on their branch and push it to the remote repository. After finishing their work on that feature, the feature branch now needs to be merged back into <code>develop</code>.</p>
-<p><img alt="Git workflow schema" src="./img/content/collaboration/merge-feature-branch.svg" title="Git workflow schema" /></p>
+<p><img alt="Git workflow schema" src="/web-development-field-guide/img/content/collaboration/merge-feature-branch.svg" title="Git workflow schema" /></p>
 <h4>Creating a release</h4>
 <p>During development you gathered some new features on the <code>develop</code> branch and you and your team decide that you want to create a new release. While all other developers will continue working on their features, one developer will be responsible for creating a new release.</p>
 <p>A release will be always branched off of <code>develop</code>. Your release branch will have the name <code>release/v0.1.0</code> where the version number follows the concept of <a href="http://semver.org/">Semantic Versioning</a></p>
-<p><img alt="Git workflow schema" src="./img/content/collaboration/create-release-branch.svg" title="Git workflow schema" /></p>
+<p><img alt="Git workflow schema" src="/web-development-field-guide/img/content/collaboration/create-release-branch.svg" title="Git workflow schema" /></p>
 <p>Sometimes you need to update things during the release cycle like update documentations, version-numbers or cleanup things. This tasks will be performed directly on your created release branch. You are still allowed to commit and push your changes locally an to remote.</p>
 <p>Once a release is ready for deployment you merge it back to <code>master</code> and <code>develop</code>. It’s important to merge back into develop because critical updates may have been added to the release branch and they need to be accessible to new features right ahead.</p>
-<p><img alt="Git workflow schema" src="./img/content/collaboration/merge-release-branch.svg" title="Git workflow schema" /></p>
+<p><img alt="Git workflow schema" src="/web-development-field-guide/img/content/collaboration/merge-release-branch.svg" title="Git workflow schema" /></p>
 <p>Following the concept of <a href="http://semver.org/">Semantic Versioning</a> you need to apply a new tag to your merge commit and increment the <em>Major</em> or <em>Minor</em> version number <code>vmajor.minor.0</code>.</p>
 <p>After the release is merged into our historical branches it can be deleted.</p>
 <h4>Applying hotfixes</h4>
 <p>After the deployment of a new release, you or a user discovers a bug that needs to be fixed immediately. You might currently work on a new feature or cover anything else. Since we have independent branches it is no problem to interrupt your work and  and switch over to create a hotfix for your project.</p>
 <p>To address the bug, you create a maintenance branch off of master, fixes the issue with as many commits as necessary, then merges it directly back into <code>master</code> and <code>develop</code> and if available into the current <code>release</code>.</p>
-<p><img alt="Git workflow schema" src="./img/content/collaboration/create-hotfix-branch.svg" title="Git workflow schema" /></p>
+<p><img alt="Git workflow schema" src="/web-development-field-guide/img/content/collaboration/create-hotfix-branch.svg" title="Git workflow schema" /></p>
 <p>Following the concept of <a href="http://semver.org/">Semantic Versioning</a>you need to apply a new tag to your merge commit and increment the <em>Patch</em> number <code>v1.4.patch</code></p>
 <p>After the merge you are free to delete the hotfix branch.</p>
 <h3>Extra: Some useful links</h3>

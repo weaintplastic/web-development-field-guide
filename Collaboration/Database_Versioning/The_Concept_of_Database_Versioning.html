@@ -51,9 +51,9 @@
                                                             <div class="page-header sub-header clearfix">
                                     <h1>The Concept of Database Versioning                                                                            </h1>
                                     <span style="float: left; font-size: 10px; color: gray;">
-                                        Tuesday, June 16, 2015                                    </span>
+                                        Thursday, June 25, 2015                                    </span>
                                     <span style="float: right; font-size: 10px; color: gray;">
-                                        7:11 AM                                    </span>
+                                        3:56 AM                                    </span>
                                 </div>
                             
                             <p>Versioning a database means sharing all changes of a database that are neccessary for other team members in order to get the project running properly. Database versioning starts with a settled database schema (skeleton) and optionally with some data.
@@ -72,23 +72,23 @@ To track and share changes of a database, we are working with a quite common con
 <h3>Versioning Workflow</h3>
 <p>At some point in your development process you have to decide to set a settled codebase which you and others will update and extend. This usually happens once you are not working alone on a project and you have to share a common codebase with others, or at least when you create your first release.</p>
 <p>Same thing happens with the database. Once you're defining a common codebase you are creating a snapshot of your current database, which will act as the base for all further database manipulations.</p>
-<p><img alt="Database Patching" src="./img/content/collaboration/db-versioning-01.svg" title="Database Patching" /></p>
+<p><img alt="Database Patching" src="/web-development-field-guide/img/content/collaboration/db-versioning-01.svg" title="Database Patching" /></p>
 <p>After creating your first release, you and your teammates will start working on new features in your dedicated feature branches. Some of this features may rely on database changes, like introducing new tables, alter existing table structures or adding critical data to a certain tables.
 Once your feature code is ready to share it with the others, you'll merge it to the develop branch. At this point your changes to the database become relevant for other developers. To tell them what changes need to be performed, you are going to create a patch file.
 Every patch has it's own file, so a project probably ends up with a bunch of patch files in your migrations folder.</p>
-<p><img alt="Database Patching" src="./img/content/collaboration/db-versioning-02.svg" title="Database Patching" /></p>
+<p><img alt="Database Patching" src="/web-development-field-guide/img/content/collaboration/db-versioning-02.svg" title="Database Patching" /></p>
 <p>Once your patches are shared within the <code>develop</code> branch, every teammate is able to update his database corresponding to the current codebase. <a href="">A migration manager tool</a> will help to decide which patches are waiting to be applied and which patches have already been applied to your database.</p>
 <p>This basic workflow will exist throughout the whole project. For each database change based on a new feature implementation a patch file will be created and shared throughout the team. So everytime you are going to update your codebase and pull or merge the newest version of develop into your local repository, be sure to check on new patch files that need to be executed.</p>
-<p><img alt="Database Patching" src="./img/content/collaboration/db-versioning-03.svg" title="Database Patching" /></p>
+<p><img alt="Database Patching" src="/web-development-field-guide/img/content/collaboration/db-versioning-03.svg" title="Database Patching" /></p>
 <p>Imagine you start working on a project that lives since years and the current version is v4.22.0. Following the suggested approach, you'll start setting up your database using the <code>schema.sql</code> and <code>data.sql</code> that were created during the first release cycle and start executing all patch files that were created during the development process until today.</p>
 <p>The risks are pretty high, that the migration will fail at some point an you'll never reach the neccessary database state that is neccessary to make the current codebase work on your local environment.</p>
 <p>To avoid scenarios like this, we suggest to create an up to date dump of your schema and date for at least every minor and major release.</p>
-<p><img alt="Database Patching" src="./img/content/collaboration/db-versioning-04.svg" title="Database Patching" /></p>
+<p><img alt="Database Patching" src="/web-development-field-guide/img/content/collaboration/db-versioning-04.svg" title="Database Patching" /></p>
 <p>A developer who starts working on a project at this state will initilize his local project environment with the database dumps that were provided with the release of version <code>v4.22.0</code>. Since these dumps already contain all the affects of previous patches, he only has to execute the migration file <code>patch-86</code> in order to update his database to work with the current codebase of the <code>develop</code> branch.</p>
 <p>So we covered working with features and related database changes, but even hotfixes can cause changes that need to be shared. Same as for features, changes that need to be performed during the process of a hotfix.</p>
-<p><img alt="Database Patching" src="./img/content/collaboration/db-versioning-05.svg" title="Database Patching" /></p>
+<p><img alt="Database Patching" src="/web-development-field-guide/img/content/collaboration/db-versioning-05.svg" title="Database Patching" /></p>
 <p>Applying all these concepts to your workflow, the result of your database versioning should look like this.</p>
-<p><img alt="Database Patching" src="./img/content/collaboration/db-versioning.svg" title="Database Patching" /></p>                                                    </article>
+<p><img alt="Database Patching" src="/web-development-field-guide/img/content/collaboration/db-versioning.svg" title="Database Patching" /></p>                                                    </article>
                     </div>
                 </div>
             </div>

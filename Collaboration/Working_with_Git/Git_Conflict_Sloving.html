@@ -51,9 +51,9 @@
                                                             <div class="page-header sub-header clearfix">
                                     <h1>Git Conflict Sloving                                                                            </h1>
                                     <span style="float: left; font-size: 10px; color: gray;">
-                                        Tuesday, June 16, 2015                                    </span>
+                                        Thursday, June 25, 2015                                    </span>
                                     <span style="float: right; font-size: 10px; color: gray;">
-                                        7:11 AM                                    </span>
+                                        3:56 AM                                    </span>
                                 </div>
                             
                             <p>Everybody's greatest fear when working with Git or any other Version Control System is to mess it up. But let me tell you that there is almost no way to mess up a project when you follow the suggested Workflow when starting to collaborate on code. But still, for a lot of developers there  is still one big fear left – <strong>Merge-Conflicts</strong></p>
@@ -66,7 +66,7 @@ Git also takes care of most things during merging and even when it comes to conf
 <h3>Dealing with Merge Conflicts</h3>
 <p>When a merge conflict happens the first thing you probably should do is to stay cool an figure out what just happend and why. Did a merge conflict happen because of a deleted or modified file or did you both add a file with the same name?</p>
 <p>Sourcetree will help you to identify conflicted files.</p>
-<p><img alt="Conflicted Files" src="./img/content/collaboration/sourcetree-conflict-01.jpg" title="Conflicted Files" />  </p>
+<p><img alt="Conflicted Files" src="/web-development-field-guide/img/content/collaboration/sourcetree-conflict-01.jpg" title="Conflicted Files" />  </p>
 <h4>Conflict Markup</h4>
 <p>Let's take a closer look on how a conflict will reflect in markup of your file. Git will wrap conflicted areas with a <strong><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code></strong> marker in the beginning and a <strong><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; [other/branch/name]</code></strong> marker at the end.</p>
 <h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
@@ -92,9 +92,9 @@ font-family: sans-serif;</h1>
 <p>When a conflict happens, your job is to clean it up. The example above is pretty simple and you might be able to solve the conflict using a text editor. But sometimes there are pretty complex conflicts happening to a file and the conflict markup becomes pretty messy. There are plenty of tools out there, that will help you resolve these conflicts visually and that will work well together with Sourcetree. One tool that will help you to resolve conflicts is <a href="http://www.perforce.com/product/components/perforce-visual-merge-and-diff-tools">P4Merge</a>.
 The only thing you need to do to get it working correctly is to download and install <a href="http://www.perforce.com/product/components/perforce-visual-merge-and-diff-tools">P4Merge</a> and add it as the preferred external Diff and Merge Tool in the preferences of Sourcetree. Therefore navigate to <strong>Diff</strong> in Sourcetree's preferences and select <em>P4Merge</em> in the dropdown.</p>
 <p>Once a file is marked as conflicted you'll will notice this by the Icon that Sourcetree adds to the file in the list of changed files. To fire up an external merge tool right-click on the conflicted file, goto <em>Resolve Confilicts</em> and choose <em>Launch External Merge Tool</em>.</p>
-<p><img alt="Conflicted Files" src="./img/content/collaboration/sourcetree-conflict-02.jpg" title="Conflicted Files" /></p>
+<p><img alt="Conflicted Files" src="/web-development-field-guide/img/content/collaboration/sourcetree-conflict-02.jpg" title="Conflicted Files" /></p>
 <p><em>P4Merge</em> will open up the conflicted file in a new window. There you'll see three columns first. The left one reflects the content of your <strong>local</strong> working file, the right column shows content of the <strong>remote</strong> file you've tried to integrate. In the middle you'll find the <strong>common base</strong> of the two conflicted files (left and right).</p>
-<p><img alt="Conflicted Files" src="./img/content/collaboration/sourcetree-conflict-03.jpg" title="Conflicted Files" /></p>
+<p><img alt="Conflicted Files" src="/web-development-field-guide/img/content/collaboration/sourcetree-conflict-03.jpg" title="Conflicted Files" /></p>
 <p>The view underneath the three columns of referenced files will give you the result of the merge. Usually P4Merge tries to merge all three versions – local, remote and base – of your file, but you can decide what should go into the final result and what should be ignored by toggle the Icon-Buttons to the right of the merged lines. The yellow square is the common base, the purple triangle stands for your local version and the green circle reflects the changes that will be included from the remote file. You can click (single toggle) or hold Shift and click (multiple selection) to control which changes make it to the final result. You can do this with every conflict in this file one by another. If you need to do custom changes to the final result feel free to use the editor function of the merged result view and write down your own changes.</p>
 <p>After you've finished resolving the conflicted file make sure to save and quit the merge tool. Only then Sourcetree is able to recognize that a conflict was resolved an therefore changes the state of the file from conflicted to staged.</p>
 <p>If your merge was successful and everything is okay, you can delete this file.</p>

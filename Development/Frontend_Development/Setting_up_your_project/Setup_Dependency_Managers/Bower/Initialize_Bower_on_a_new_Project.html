@@ -51,9 +51,9 @@
                                                             <div class="page-header sub-header clearfix">
                                     <h1>Initialize Bower on a new Project                                                                            </h1>
                                     <span style="float: left; font-size: 10px; color: gray;">
-                                        Tuesday, June 16, 2015                                    </span>
+                                        Thursday, June 25, 2015                                    </span>
                                     <span style="float: right; font-size: 10px; color: gray;">
-                                        7:11 AM                                    </span>
+                                        2:40 AM                                    </span>
                                 </div>
                             
                             <p>Use your command line and navigate to the root folder of your project and enter</p>
@@ -72,7 +72,7 @@ set currently installed components as dependencies?: Yes
 add commonly ignored files to ignore list?: Yes
 would you like to mark this package as private which prevents it from being accidentally published to the registry?: Yes</code></pre>
 <blockquote>
-<p><strong>Make sure you don't commit and push your dependencies source files to the repository but exclude them using .gitignore when <a href="/web-development-field-guide/Collaboration/Setup_Collaborative_Projects">setting up your collaborative project</a> </strong></p>
+<p><strong>Make sure you don't commit and push your dependencies source files to the repository but exclude them using .gitignore when <a href="./Collaboration/Setup_Collaborative_Projects">setting up your collaborative project</a> </strong></p>
 </blockquote>
 <p>You are now ready to manage dependencies on third party libraries, frameworks and such using bower. Therefore you use your command line and the command <code>bower install</code></p>
 <p>You can install any kind of package, from a listed bower packet, to a github repository as well as a resource that is defined through a specific URL. The <code>--save-dev</code> attribute makes sure, that these dependencies will be listed in the <code>bower.json</code>file.</p>
@@ -86,7 +86,7 @@ $ bower install desandro/masonry --save
 $ bower install git://github.com/user/package.git --save
 // URL
 $ bower install http://example.com/script.js --save</code></pre>
-<p>The installed packages are saved in your projects root folder named <code>bower_components</code>. Usually this components contain more than just the ressource you need. jQuery for example holds all the source files and you'll find the compiled jquery source in the <code>dist</code> folder of the package. To use it in your project you need to <a href="/web-development-field-guide/Development/Frontend_Development/Writing_maintainable_and_modular_Javascript">include this files in your javascript</a> workflow and make sure, that your <a href="/web-development-field-guide/Development/Frontend_Development/Setting_up_your_project/Setup_Build_System">build system</a> is aware of including it.</p>                                                    </article>
+<p>The installed packages are saved in your projects root folder named <code>bower_components</code>. Usually this components contain more than just the ressource you need. jQuery for example holds all the source files and you'll find the compiled jquery source in the <code>dist</code> folder of the package. To use it in your project you need to <a href="./Development/Frontend_Development/Writing_maintainable_and_modular_Javascript">include this files in your javascript</a> workflow and make sure, that your <a href="./Development/Frontend_Development/Setting_up_your_project/Setup_Build_System">build system</a> is aware of including it.</p>                                                    </article>
                     </div>
                 </div>
             </div>

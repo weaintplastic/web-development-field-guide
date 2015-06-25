@@ -51,14 +51,14 @@
                                                             <div class="page-header sub-header clearfix">
                                     <h1>Initialize Database Versioning on an existing project                                                                            </h1>
                                     <span style="float: left; font-size: 10px; color: gray;">
-                                        Tuesday, June 16, 2015                                    </span>
+                                        Thursday, June 25, 2015                                    </span>
                                     <span style="float: right; font-size: 10px; color: gray;">
-                                        7:11 AM                                    </span>
+                                        2:40 AM                                    </span>
                                 </div>
                             
                             <p>When joining a ongoing project there are some simple steps you need to follow in order to setup the database versioning workflow on your local machine.</p>
 <h3>Install Phinx</h3>
-<p>Joining a project that was prepared for database versioning, you'll find Phinx as a dependency in the Composer manifest file. Following the process of setting up a project, you'll install Phinx automatically when <a href="/web-development-field-guide/Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer/Initialize_Composer_on_an_existing_Project">installing all Composer dependencies</a>. As a reminder, you have execute the following statement in your project root on your command line:</p>
+<p>Joining a project that was prepared for database versioning, you'll find Phinx as a dependency in the Composer manifest file. Following the process of setting up a project, you'll install Phinx automatically when <a href="./Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer/Initialize_Composer_on_an_existing_Project">installing all Composer dependencies</a>. As a reminder, you have execute the following statement in your project root on your command line:</p>
 <pre><code>composer install</code></pre>
 <p>Composer will install Phinx and its dependencies for you and you are good to move on.</p>
 <h3>Build your database</h3>
@@ -103,7 +103,7 @@ environments:
 <pre><code>paths:
     migrations: %%PHINX_CONFIG_DIR%%/db/migrations</code></pre>
 <p>Now you should update the <code>development</code> environment database credentials in order to start working with the database of your local development environemnt.
-Working with the <a href="/web-development-field-guide/Environment/Local_Development_Environment/Vagrant">Vagrant Box</a>, your configuration might look like this:</p>
+Working with the <a href="./Environment/Local_Development_Environment/Vagrant">Vagrant Box</a>, your configuration might look like this:</p>
 <pre><code>development:
     adapter: mysql
     host: 127.0.0.1
@@ -113,7 +113,7 @@ Working with the <a href="/web-development-field-guide/Environment/Local_Develop
     port: 3306
     charset: utf8</code></pre>
 <h3>Upgrade your database</h3>
-<p>Depending on how many migrations were written after the last <code>schema.sql</code> and <code>data.sql</code> dumps were created, you probably need to upgrade your database. In order to get an overview of the current state of your database you should first <a href="/web-development-field-guide/Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Status_of_your_database">check the status</a> and then perform an <a href="/web-development-field-guide/Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Upgrade_your_database">upgrade on your database</a>.</p>                                                    </article>
+<p>Depending on how many migrations were written after the last <code>schema.sql</code> and <code>data.sql</code> dumps were created, you probably need to upgrade your database. In order to get an overview of the current state of your database you should first <a href="./Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Status_of_your_database">check the status</a> and then perform an <a href="./Collaboration/Database_Versioning/Working_with_Database_Versioning/Working_with_migrations/Upgrade_your_database">upgrade on your database</a>.</p>                                                    </article>
                     </div>
                 </div>
             </div>

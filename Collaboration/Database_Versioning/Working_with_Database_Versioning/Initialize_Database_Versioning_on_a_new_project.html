@@ -51,12 +51,12 @@
                                                             <div class="page-header sub-header clearfix">
                                     <h1>Initialize Database Versioning on a new project                                                                            </h1>
                                     <span style="float: left; font-size: 10px; color: gray;">
-                                        Tuesday, June 16, 2015                                    </span>
+                                        Thursday, June 25, 2015                                    </span>
                                     <span style="float: right; font-size: 10px; color: gray;">
-                                        7:11 AM                                    </span>
+                                        3:56 AM                                    </span>
                                 </div>
                             
-                            <p>Phinx should be installed using <a href="https://getcomposer.org/">Composer</a>. <a href="https://getcomposer.org/">Composer</a> is a tool for dependency management in PHP. If you haven't read about how to setup Composer for your project yet, please visit the <a href="/web-development-field-guide/Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer">Composer section</a> in this documentation.</p>
+                            <p>Phinx should be installed using <a href="https://getcomposer.org/">Composer</a>. <a href="https://getcomposer.org/">Composer</a> is a tool for dependency management in PHP. If you haven't read about how to setup Composer for your project yet, please visit the <a href="./Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Composer">Composer section</a> in this documentation.</p>
 <h3>Install Phinx</h3>
 <blockquote>
 <p>Phinx requires at least PHP 5.3.2 (or later).</p>
@@ -104,7 +104,7 @@ environments:
 <pre><code>paths:
     migrations: %%PHINX_CONFIG_DIR%%/db/migrations</code></pre>
 <p>Now you should update the <code>development</code> environment database credentials in order to start working with the database of your local development environemnt.
-Working with the <a href="/web-development-field-guide/Environment/Local_Development_Environment/Vagrant">Vagrant Box</a>, your configuration might look like this:</p>
+Working with the <a href="./Environment/Local_Development_Environment/Vagrant">Vagrant Box</a>, your configuration might look like this:</p>
 <pre><code>development:
     adapter: mysql
     host: 127.0.0.1
@@ -114,14 +114,14 @@ Working with the <a href="/web-development-field-guide/Environment/Local_Develop
     port: 3306
     charset: utf8</code></pre>
 <h3>Initalize Database Versioning</h3>
-<p>As mentioned in the <a href="/web-development-field-guide/Collaboration/Database_Versioning/The_Concept_of_Database_Versioning">concepts of putting a database under version control</a>, you decide on your own, when you want to start database versioning. A good reason to begin versioning is, when teammates are joining the project or when you are going to release your first version.</p>
+<p>As mentioned in the <a href="./Collaboration/Database_Versioning/The_Concept_of_Database_Versioning">concepts of putting a database under version control</a>, you decide on your own, when you want to start database versioning. A good reason to begin versioning is, when teammates are joining the project or when you are going to release your first version.</p>
 <p>To begin the process of versioning your database you first need to create a dump of your current database state. Therfore dump the schema and the data of your database separately and save them in the <code>/db</code> folder of your project.
 MySQL Clients like SequelPro or HeidiSQL help you to export the skelton of your tables as <code>schema.sql</code> and the neccessary data scripts <code>data.sql</code>.</p>
 <p>As long as you or any other developer is creating a new version of the schema and data sripts, all newcomming developers will start their project using the intially created <code>schema.sql</code> and <code>data.sql</code>.</p>
 <p>Your project's state should then look something like this:</p>
-<p><img alt="Database Patching" src="./img/content/collaboration/db-versioning-01.svg" title="Database Patching" /></p>
+<p><img alt="Database Patching" src="/web-development-field-guide/img/content/collaboration/db-versioning-01.svg" title="Database Patching" /></p>
 <h3>What's up next?</h3>
-<p>Phinx is now correctly set up to <a href="/web-development-field-guide/Collaboration/Database_Versioning/Versioning_with_Phinx/Working_with_migrations">create, execute and rollback migrations</a>.</p>                                                    </article>
+<p>Phinx is now correctly set up to <a href="./Collaboration/Database_Versioning/Versioning_with_Phinx/Working_with_migrations">create, execute and rollback migrations</a>.</p>                                                    </article>
                     </div>
                 </div>
             </div>

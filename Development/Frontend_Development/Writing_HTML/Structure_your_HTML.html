@@ -51,12 +51,12 @@
                                                             <div class="page-header sub-header clearfix">
                                     <h1>Structure your HTML                                                                            </h1>
                                     <span style="float: left; font-size: 10px; color: gray;">
-                                        Tuesday, June 16, 2015                                    </span>
+                                        Thursday, June 25, 2015                                    </span>
                                     <span style="float: right; font-size: 10px; color: gray;">
-                                        7:11 AM                                    </span>
+                                        2:40 AM                                    </span>
                                 </div>
                             
-                            <p>As already done with your <a href="/web-development-field-guide/Development/Frontend_Development/Writing_CSS/Structure_your_CSS">CSS</a> and <a href="/web-development-field-guide/Development/Frontend_Development/Writing_Javascript/Structure_your_Javascript">Javascript</a> you should also think of reusable elements in your HTML and therefore outsource them as components to be included.</p>
+                            <p>As already done with your <a href="./Development/Frontend_Development/Writing_CSS/Structure_your_CSS">CSS</a> and <a href="./Development/Frontend_Development/Writing_Javascript/Structure_your_Javascript">Javascript</a> you should also think of reusable elements in your HTML and therefore outsource them as components to be included.</p>
 <pre><code>src
 |-- inc
 |    |-- site-header.inc.html
@@ -66,7 +66,7 @@
 |-- index.html            // Includes site-header.inc.html and site-footer.inc.html
 `-- products.html         // Includes site-header.inc.html,
                              site-footer.inc.html and teaser.inc.html</code></pre>
-<p>Using the power of our <a href="/web-development-field-guide/Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/A_complex_Gulp_build_script">build script</a> we don't need to give up on including outsourced files. By simply adding the following snippet anywhere in our HMTL source, the build script takes care to include the given files when building our distribution version</p>
+<p>Using the power of our <a href="./Development/Frontend_Development/Setting_up_your_project/Setup_Build_System/A_complex_Gulp_build_script">build script</a> we don't need to give up on including outsourced files. By simply adding the following snippet anywhere in our HMTL source, the build script takes care to include the given files when building our distribution version</p>
 <pre><code>&lt;body&gt;
 
     //= include inc/site-header.inc.html
