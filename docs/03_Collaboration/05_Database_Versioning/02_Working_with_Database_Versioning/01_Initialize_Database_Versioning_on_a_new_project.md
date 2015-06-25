@@ -80,7 +80,7 @@ As long as you or any other developer is creating a new version of the schema an
 
 Your project's state should then look something like this:
 
-![Database Patching](./img/content/collaboration/db-versioning-01.svg "Database Patching")
+![Database Patching](/web-development-field-guide/img/content/collaboration/db-versioning-01.svg "Database Patching")
 
 ### What's up next?
 

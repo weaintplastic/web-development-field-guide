@@ -8,7 +8,7 @@ The first thing to do is to download and install SourceTree from their [official
 
 Creating a new local repository form a remote source in Sourchtree you have to clone a project. To do so, click on the `Clone / New` button (top-left corner), select the 'Clone Repository' tab.
 
-![Clone a git repository](./img/collaboration/clone-repo.png "Cloning a git repo")  
+![Clone a git repository](/web-development-field-guide/img/collaboration/clone-repo.png "Cloning a git repo")  
 
 The Form will ask you for a source path (most likely an URL) which points to the remote repository and a destination path where to initialize the repository locally on your machine. Just give it a name and you should be done.
 
