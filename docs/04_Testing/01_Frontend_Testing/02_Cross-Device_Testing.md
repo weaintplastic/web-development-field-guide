@@ -32,7 +32,7 @@ Testing your responsive design by resizing your browser window to see how the vi
 Safari and Google developed mechanisms that enable us to debug on mobile devices remotely.
 
 #### Debug on iOS (MacOS only)
-1. To use your Safari Developer Toolbar on your mobile testing device you first have to prepare your device. Therefore go to Settings > Safaria > Advanced and turn on Web Inspector.
+1. To use your Safari Developer Toolbar on your mobile testing device you first have to prepare your device. Therefore go to Settings > Safari > Advanced and turn on Web Inspector.
 
 2. To enable Safari to allow remote debugging you need to open up Safari's Preferences and click on the *Advanced* tab. There you need to make sure that *Show Develop menu in the menu bar* is checked.
 
