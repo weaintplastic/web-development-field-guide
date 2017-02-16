@@ -24,12 +24,12 @@ In more detail we aim to support theses browsers at the following level:
 
 
 ### Native IE Versions
-Since the feature to select different rendere engine versions on the developer tools in Internet Explorer are gone with version 11, and testing on a non-native version of IE is in general not the best choice, you should try to test on native IE installations. Microsoft provides a bunch of native environments for your virtual machine. Since you are already using VirtualBox for the setup of your local Vagrant environment, all you have to do is to visit [modern.ie](https://www.modern.ie/de-de/virtualization-tools) and grab an image of the browser and operating system you need. Basically you should have IE11, IE10, IE9 and IE8 available for testing.
+Since the feature to select different rendering engine versions in the developer tools on Internet Explorer is gone with version 11, and testing on a non-native version of IE is in general not the best choice, you should try to test on native IE installations. Microsoft provides a bunch of native environments for your virtual machine. Since you are already using VirtualBox for the setup of your local Vagrant environment, all you have to do is to visit [modern.ie](https://www.modern.ie/de-de/virtualization-tools) and grab an image of the browser and operating system you need. Basically you should have IE11, IE10, IE9 and IE8 available for testing.
 After you've installed and setup your testing environments following the instructions on *mondern.ie* you can start your virtual machine and access your local host, [using xip.io]() and your IP address. This is the most powerful way to test your website on a native development environment.
 
 
 ### Multiple Firefox Versions
-You can install multiple Firefox Versions on your system. A complete list of of Firefox realeases can be found here: https://ftp.mozilla.org/pub/mozilla.org/firefox/releases/. To work with different versions of Firefox it is neccessary to run these versions with different Firefox profiles.
+You can install multiple Firefox Versions on your system. A complete list of of Firefox releases can be found here: https://ftp.mozilla.org/pub/mozilla.org/firefox/releases/. To work with different versions of Firefox it is neccessary to run these versions with different Firefox profiles.
 
 Mozilla itself provided a pretty complete guide on how to do that on Windows: https://developer.mozilla.org/en-US/docs/Mozilla/Multiple_Firefox_Profiles
 
