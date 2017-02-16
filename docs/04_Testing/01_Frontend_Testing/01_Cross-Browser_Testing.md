@@ -29,7 +29,7 @@ After you've installed and setup your testing environments following the instruc
 
 
 ### Multiple Firefox Versions
-You can install multiple Firefox Versions on your system. A complete list of of Firefox realeases can be found here: https://ftp.mozilla.org/pub/mozilla.org/firefox/releases/. To work with different versions of Firefox it is neccessary to run these versions with different Firefox profiles.
+You can install multiple Firefox Versions on your system. A complete list of of Firefox releases can be found here: https://ftp.mozilla.org/pub/mozilla.org/firefox/releases/. To work with different versions of Firefox it is neccessary to run these versions with different Firefox profiles.
 
 Mozilla itself provided a pretty complete guide on how to do that on Windows: https://developer.mozilla.org/en-US/docs/Mozilla/Multiple_Firefox_Profiles
 
