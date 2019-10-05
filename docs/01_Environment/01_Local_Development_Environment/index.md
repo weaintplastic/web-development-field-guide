@@ -1,4 +1,4 @@
-I prefer a development environment, where every developer is able to work on his own sandboxed local server with the tools they are most comfotable with. A sandboxed development environment will reduce the risk of influencing or destroying other developers work. You will have full control on the configuration of your server environment plus full access to any logfiles you'll probably need during development and debugging.
+I prefer a development environment, where every developer is able to work on his own sandboxed local server with the tools they are most comfortable with. A sandboxed development environment will reduce the risk of influencing or destroying other developers work. You will have full control on the configuration of your server environment plus full access to any logfiles you'll probably need during development and debugging.
 
 > #### Good reasons why you should work on your local environment
 > * independent sandboxed environment
