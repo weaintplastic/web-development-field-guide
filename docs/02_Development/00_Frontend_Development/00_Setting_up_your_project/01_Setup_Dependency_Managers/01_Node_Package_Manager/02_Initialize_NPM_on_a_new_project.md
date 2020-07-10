@@ -14,7 +14,7 @@ This command will ask you some questions to generate a `package.json`file in you
     author: // your name
     license: N/A
 
-After you've finished the process of initializing your project using the Node Package Manager, node.js created a `package.json`file in your project's root direcotry similar to this one:
+After you've finished the process of initializing your project using the Node Package Manager, node.js created a `package.json`file in your project's root directory similar to this one:
 
     {
       "name": "project-name",
